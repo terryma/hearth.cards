@@ -13,7 +13,8 @@
       <span class="input-group-addon">
         <span class="glyphicon glyphicon-search"></span>
       </span>
-      <input ng-model="query" ng-change="search(query)" type="search" class="form-control" placeholder="Search" autofocus>
+      <input ng-model="query" ng-change="search(query)"
+      ng-model-options="{debounce:200}" type="search" class="form-control" placeholder="Search" autofocus>
     </div>
   </div>
 </div>
