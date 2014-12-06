@@ -1,95 +1,133 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  background: transparent url("/images/body-content-bg.jpg") 50% 0 repeat-y;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
-}
+  /* border-bottom: 1px solid #e5e5e5; */
+  padding-top: 215px;
+  background: transparent url("/images/logo.png") center top no-repeat;
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
 }
 
 /* Custom page footer */
 .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  color: #777;
+  /* border-top: 1px solid #e5e5e5; */
 }
 
 .container-narrow > hr {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-}
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 
-.jumbotron .btn {
+  .btn {
     font-size: 21px;
     padding: 14px 24px;
+  }
 }
 
 /* Supporting marketing content */
 .marketing {
-    margin: 40px 0;
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
 }
 
-.marketing p + h4 {
-    margin-top: 28px;
+#custom-search-input {
+  margin:0;
+  margin-top: 10px;
+  padding: 0;
+
+  .search-query {
+    padding-right: 15px;
+    padding-right: 4px \9;
+    padding-left: 15px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    border-radius: 5px;
+    background-color:#FAF0E6
+  }
+
+  button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -35px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #838383;
+    z-index: 3;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+  .container {
+    max-width: 730px;
+  }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  .footer {
+    margin-top: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 }
