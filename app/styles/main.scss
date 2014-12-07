@@ -1,4 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$grid-gutter-width: 0 !default;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -71,9 +72,14 @@ body {
   }
 }
 
+#search {
+  margin-bottom: 40px;
+}
+
 #custom-search-input {
   margin:0;
   margin-top: 10px;
+  margin-right: -28px;
   padding: 0;
 
   .search-query {
@@ -108,8 +114,13 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+  /* .container { */
+    /* max-width: 730px; */
+  /* } */
+
+  #cards {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   /* Remove the padding we set earlier */
