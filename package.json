@@ -5,6 +5,7 @@
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "grunt": "^0.4.1",
+    "grunt-angular-templates": "^0.5.7",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-concurrent": "^0.5.0",
     "grunt-contrib-clean": "^0.5.0",
@@ -21,6 +22,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^0.2.1",
     "grunt-google-cdn": "^0.4.0",
+    "grunt-inline-angular-templates": "^0.1.5",
     "grunt-karma": "^0.9.0",
     "grunt-newer": "^0.7.0",
     "grunt-ng-annotate": "^0.4.0",

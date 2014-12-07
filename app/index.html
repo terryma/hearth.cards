@@ -20,21 +20,36 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container-fluid">
-      <div class="header">
-        <!-- <ul class="nav nav-pills pull-right"> -->
-          <!-- <li class="active"><a ng-href="#">Home</a></li> -->
-          <!-- <li><a ng-href="#">About</a></li> -->
-          <!-- <li><a ng-href="#">Contact</a></li> -->
-        <!-- </ul> -->
-        <!-- <h3 class="text-muted">hearth cards</h3> -->
+    <div class="container-fluid" ng-controller="MainCtrl">
+      <div class="header"> </div>
+
+      <!-- usemin can't deal with ng-include for some reason even with a custom
+      pattern. Putting everything in index.html for now because we need a revved
+      version of the partial -->
+      <!-- <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div> -->
+      <div class="row" id="search">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1
+          col-sm-10 col-xs-offset-1 col-xs-10" >
+          <div id="custom-search-input" class="input-group input-group-lg">
+            <input ng-model="query" ng-change="search(query)"
+            ng-model-options="{debounce:200}" type="search" class="search-query form-control" placeholder="" autofocus>
+            <span class="input-group-btn">
+              <button class="btn" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </div>
       </div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
-      <div class="footer">
-        <!-- <p><span class="glyphicon glyphicon-heart"></span> from hearthcards</p> -->
+      <div class="row" id="cards">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="card in shown">
+          <img ng-src="images/{{card.img}}" alt="..." class="img-responsive
+          center-block">
+        </div>
       </div>
+
+      <div class="footer"> </div>
     </div>
 
 
