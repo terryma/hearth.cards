@@ -407,7 +407,38 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.coffee',
         singleRun: true
       }
+    },
+
+    aws: grunt.file.readJSON('aws-keys.json'), // Read the file
+
+    aws_s3: {
+      options: {
+        accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
+        secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
+        region: 'us-west-2',
+        uploadConcurrency: 5, // 5 simultaneous uploads
+        downloadConcurrency: 5 // 5 simultaneous downloads
+      },
+      dist: {
+        options: {
+          bucket: 'hearth.cards',
+          differential: true, // Only uploads the files that have changed
+          // debug: true, // Doesn't actually delete but shows log
+          displayChangesOnly: true,
+          params: {
+            // ContentEncoding: 'gzip' // applies to all the files!
+          },
+          mime: {
+            // 'dist/assets/production/LICENCE': 'text/plain'
+          }
+        },
+        files: [
+          {expand: true, cwd: 'dist/', src: ['**', '!index.html'], dest: ''},
+          {expand: true, cwd: 'dist/', src: ['index.html'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}}
+        ]
+      }
     }
+
   });
 
 
@@ -453,7 +484,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'aws_s3:dist'
   ]);
 
   grunt.registerTask('default', [
