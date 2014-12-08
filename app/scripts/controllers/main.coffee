@@ -9,7 +9,6 @@ angular.module('hearthCardsApp')
     $http.get('/cards.json').success (cards) ->
       # Only show draftable cards now
       $scope.cards = (card for card in cards when card.draftable)
-      console.log "total number of cards = ", $scope.cards.length
       $scope.shown = $scope.cards
 
     # called by orderBy
