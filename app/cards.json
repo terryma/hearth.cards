@@ -8241,7 +8241,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7728-anubar-ambusher",
@@ -8266,7 +8266,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7822-anubrekhan",
@@ -8277,7 +8277,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "12366-armor-plating",
@@ -8354,7 +8354,7 @@
         "mana": "0",
         "attack": "0",
         "health": "7",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7877-baron-rivendare",
@@ -8365,7 +8365,7 @@
         "mana": "0",
         "attack": "0",
         "health": "14",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "12361-boom-bot",
@@ -8857,7 +8857,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "251-gelbin-mekkatorque",
@@ -8907,7 +8907,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7785-gluth",
@@ -8918,7 +8918,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7866-gothik-the-harvester",
@@ -8929,7 +8929,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7867-gothik-the-harvester",
@@ -8940,7 +8940,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7826-grand-widow-faerlina",
@@ -8951,7 +8951,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7827-grand-widow-faerlina",
@@ -8962,7 +8962,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7777-grobbulus",
@@ -8973,7 +8973,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7778-grobbulus",
@@ -8984,7 +8984,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7813-guardian-of-icecrown",
@@ -9021,7 +9021,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7868-harvest",
@@ -9095,7 +9095,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7845-heigan-the-unclean",
@@ -9107,7 +9107,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "470-hemet-nesingwary",
@@ -9120,7 +9120,7 @@
         "mana": "0",
         "attack": "0",
         "health": "20",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "490-hogger",
@@ -9132,7 +9132,7 @@
         "mana": "0",
         "attack": "0",
         "health": "10",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "423-homing-chicken",
@@ -9194,7 +9194,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "12339-imp",
@@ -9231,7 +9231,7 @@
         "mana": "0",
         "attack": "0",
         "health": "40",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7859-instructor-razuvious",
@@ -9242,7 +9242,7 @@
         "mana": "0",
         "attack": "0",
         "health": "55",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "320-jaina-proudmoore",
@@ -9255,7 +9255,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "139-jaina-proudmoore",
@@ -9268,7 +9268,7 @@
         "mana": "0",
         "attack": "0",
         "health": "27",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7789-jaws",
@@ -9316,7 +9316,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7809-kelthuzad",
@@ -9327,7 +9327,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "444-king-mukla",
@@ -9339,7 +9339,7 @@
         "mana": "0",
         "attack": "0",
         "health": "26",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7878-lady-blaumeux",
@@ -9415,7 +9415,7 @@
         "mana": "0",
         "attack": "0",
         "health": "75",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7850-loatheb",
@@ -9426,7 +9426,7 @@
         "mana": "0",
         "attack": "0",
         "health": "99",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7825-locust-swarm",
@@ -9452,7 +9452,7 @@
         "mana": "0",
         "attack": "0",
         "health": "15",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "655-lorewalker-cho",
@@ -9463,7 +9463,7 @@
         "mana": "0",
         "attack": "0",
         "health": "25",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7748-mad-scientist",
@@ -9501,7 +9501,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7833-maexxna",
@@ -9512,7 +9512,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "621-malfurion-stormrage",
@@ -9525,7 +9525,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7887-mark-of-the-horsemen",
@@ -9574,7 +9574,7 @@
         "mana": "0",
         "attack": "0",
         "health": "20",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7865-mind-control-crystal",
@@ -9794,7 +9794,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7838-noth-the-plaguebringer",
@@ -9806,7 +9806,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7771-patchwerk",
@@ -9817,7 +9817,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7772-patchwerk",
@@ -9828,7 +9828,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7843-plague",
@@ -10043,7 +10043,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "716-rogues-do-it",
@@ -10102,7 +10102,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7803-sapphiron",
@@ -10113,7 +10113,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7730-shade-of-naxxramas",
@@ -10445,7 +10445,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7795-thaddius",
@@ -10456,7 +10456,7 @@
         "mana": "0",
         "attack": "0",
         "health": "45",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7880-thane-korthazz",
@@ -10505,7 +10505,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "12368-time-rewinder",
@@ -10666,7 +10666,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "2-valeera-sanguinar",
@@ -10679,7 +10679,7 @@
         "mana": "0",
         "attack": "0",
         "health": "30",
-        "draftable": true
+        "draftable": false
     },
     {
         "id": "7733-voidcaller",
