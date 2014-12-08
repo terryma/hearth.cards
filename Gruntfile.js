@@ -433,8 +433,8 @@ module.exports = function (grunt) {
           }
         },
         files: [
-          {expand: true, cwd: 'dist/', src: ['**', '!index.html'], dest: ''},
-          {expand: true, cwd: 'dist/', src: ['index.html'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}}
+          {expand: true, cwd: 'dist/', src: ['**', '!index.html', '!cards.json'], dest: ''},
+          {expand: true, cwd: 'dist/', src: ['index.html', 'cards.json'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}}
         ]
       }
     }
