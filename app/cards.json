@@ -7695,7 +7695,8 @@
         "img": "253-armor-up.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "12328-attack-mode",
@@ -7787,7 +7788,8 @@
         "img": "7815-chains.png",
         "mana": "8",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7817-chains",
@@ -7798,7 +7800,8 @@
         "img": "7817-chains.png",
         "mana": "8",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "552-chicken",
@@ -7834,7 +7837,8 @@
         "img": "201-dagger-mastery.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7736-dancing-swords",
@@ -7941,7 +7945,8 @@
         "img": "7786-decimate.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7788-decimate",
@@ -7952,7 +7957,8 @@
         "img": "7788-decimate.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "12353-druid-of-the-fang",
@@ -8047,7 +8053,8 @@
         "img": "7846-eruption.png",
         "mana": "1",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7847-eruption",
@@ -8058,7 +8065,8 @@
         "img": "7847-eruption.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "520-excess-mana",
@@ -8127,7 +8135,8 @@
         "img": "677-fireblast.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "349-flames-of-azzinoth",
@@ -8138,7 +8147,8 @@
         "img": "349-flames-of-azzinoth.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7811-frost-blast",
@@ -8149,7 +8159,8 @@
         "img": "7811-frost-blast.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7812-frost-blast",
@@ -8160,7 +8171,8 @@
         "img": "7812-frost-blast.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7804-frost-breath",
@@ -8171,7 +8183,8 @@
         "img": "7804-frost-breath.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7805-frozen-champion",
@@ -8366,7 +8379,8 @@
         "img": "7868-harvest.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7869-harvest",
@@ -8377,7 +8391,8 @@
         "img": "7869-harvest.png",
         "mana": "1",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7775-hateful-strike",
@@ -8388,7 +8403,8 @@
         "img": "7775-hateful-strike.png",
         "mana": "4",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7776-hateful-strike",
@@ -8399,7 +8415,8 @@
         "img": "7776-hateful-strike.png",
         "mana": "4",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7756-haunted-creeper",
@@ -8538,7 +8555,8 @@
         "img": "83-inferno.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7858-instructor-razuvious",
@@ -8682,7 +8700,8 @@
         "img": "126-lesser-heal.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "20-life-tap",
@@ -8695,7 +8714,8 @@
         "img": "20-life-tap.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7746-loatheb",
@@ -8886,7 +8906,8 @@
         "img": "229-mind-shatter.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "70-mind-spike",
@@ -8898,7 +8919,8 @@
         "img": "70-mind-spike.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7848-mindpocalypse",
@@ -8966,7 +8988,8 @@
         "img": "7851-necrotic-aura.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7853-necrotic-aura",
@@ -8977,7 +9000,8 @@
         "img": "7853-necrotic-aura.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7836-necrotic-poison",
@@ -9118,7 +9142,8 @@
         "img": "7779-poison-cloud.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7780-poison-cloud",
@@ -9129,7 +9154,8 @@
         "img": "7780-poison-cloud.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7726-poison-seeds",
@@ -9153,7 +9179,8 @@
         "img": "7796-polarity-shift.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "405-poultryizer",
@@ -9199,7 +9226,8 @@
         "img": "7828-rain-of-fire.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7829-rain-of-fire",
@@ -9210,7 +9238,8 @@
         "img": "7829-rain-of-fire.png",
         "mana": "1",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7841-raise-dead",
@@ -9221,7 +9250,8 @@
         "img": "7841-raise-dead.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7842-raise-dead",
@@ -9232,7 +9262,8 @@
         "img": "7842-raise-dead.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7731-reincarnate",
@@ -9258,7 +9289,8 @@
         "img": "248-reinforce.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "439-repair-bot",
@@ -9383,7 +9415,8 @@
         "img": "185-shapeshift.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "580-shotgun-blast",
@@ -9396,7 +9429,8 @@
         "img": "580-shotgun-blast.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7882-sir-zeliek",
@@ -9460,7 +9494,8 @@
         "img": "7821-skitter.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7824-skitter",
@@ -9471,7 +9506,8 @@
         "img": "7824-skitter.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7764-slime",
@@ -9607,7 +9643,8 @@
         "img": "481-steady-shot.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7750-stoneskin-gargoyle",
@@ -9742,7 +9779,8 @@
         "img": "316-totemic-call.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7766-treant",
@@ -9764,7 +9802,8 @@
         "img": "7861-unbalancing-strike.png",
         "mana": "2",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7862-unbalancing-strike",
@@ -9775,7 +9814,8 @@
         "img": "7862-unbalancing-strike.png",
         "mana": "1",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7860-understudy",
@@ -9809,7 +9849,8 @@
         "img": "7886-unholy-shadow.png",
         "mana": "5",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7874-unrelenting-rider",
@@ -9915,7 +9956,8 @@
         "img": "7834-web-wrap.png",
         "mana": "3",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7835-web-wrap",
@@ -9926,7 +9968,8 @@
         "img": "7835-web-wrap.png",
         "mana": "0",
         "attack": "0",
-        "health": "0"
+        "health": "0",
+        "draftable": false
     },
     {
         "id": "7741-webspinner",

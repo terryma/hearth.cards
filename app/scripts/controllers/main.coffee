@@ -6,10 +6,15 @@ angular.element(document).ready ->
 angular.module('hearthCardsApp')
   .controller 'MainCtrl', ($scope, $filter, $http) ->
     $scope.query = ''
-    $http.get('/cards.json').success (data) ->
-      $scope.cards = data
-      $scope.shown = data
+    $http.get('/cards.json').success (cards) ->
+      # Only show draftable cards now
+      $scope.cards = (card for card in cards)
+      console.log "total number of cards = ", $scope.cards.length
+      $scope.shown = cards
 
+    # called by orderBy
+    $scope.sort = (card) ->
+      return parseInt(card.mana)
 
     $scope.parseToken = (token, filters) ->
       if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$/i.test token
