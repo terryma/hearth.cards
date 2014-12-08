@@ -8,7 +8,7 @@ angular.module('hearthCardsApp')
     $scope.query = ''
     $http.get('/cards.json').success (cards) ->
       # Only show draftable cards now
-      $scope.cards = (card for card in cards)
+      $scope.cards = (card for card in cards when card.draftable)
       console.log "total number of cards = ", $scope.cards.length
       $scope.shown = cards
 
@@ -45,6 +45,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'Expert'
       else if /^gvg$/i.test token
         filters.set.push 'Goblins vs Gnomes'
+      else if /^naxx$/i.test token
+        filters.set.push 'Curse of Naxxramas'
       else if /^secrets$/i.test token
         # special logic for "secrets", since it's in the card text and not a
         # category
