@@ -16,7 +16,7 @@ angular.module('hearthCardsApp')
       return parseInt(card.mana)
 
     $scope.parseToken = (token, filters) ->
-      if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$/i.test token
+      if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
         filters.class.push token
       else if /^minion[s]?$/i.test token
         filters.type.push 'Minion'
@@ -109,7 +109,11 @@ angular.module('hearthCardsApp')
       else
         $scope.shown = $filter('filter')($scope.cards, (value, index) ->
           for category, input of expression
-            return false if !value[category]? or input.toUpperCase() != value[category].toUpperCase()
+            # Special logic for 'neutral'
+            if category == 'class' and input.toUpperCase() == 'NEUTRAL'
+              return false if value[category]?
+            else
+              return false if !value[category]? or input.toUpperCase() != value[category].toUpperCase()
 
           # for any of text, if name or card text contains it
           for text in filters.text
