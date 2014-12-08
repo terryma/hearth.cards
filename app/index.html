@@ -52,7 +52,15 @@
         </div>
       </div>
 
-      <div class="footer"> </div>
+      <div class="notfound text-center" ng-cloak ng-show="shown.length == 0">
+        <h1>Nothing Found</h1>
+        <img src="images/error-bg.png" class="img-responsive center-block">
+      </div>
+
+      <div class="footer text-center">
+        <p><span class="glyphicon glyphicon-heart"></span> from <a
+          href="http://www.github.com/terryma">@terryma</a></p>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
