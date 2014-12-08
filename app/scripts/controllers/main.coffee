@@ -16,7 +16,10 @@ angular.module('hearthCardsApp')
       return parseInt(card.mana)
 
     $scope.parseToken = (token, filters) ->
-      if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
+      # Handle some words that don't impact search results
+      if /^with$/.test token
+        return
+      else if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
         filters.class.push token
       else if /^minion[s]?$/i.test token
         filters.type.push 'Minion'
