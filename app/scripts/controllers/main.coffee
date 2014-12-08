@@ -66,31 +66,31 @@ angular.module('hearthCardsApp')
         text: [] # this goes on name and card text
 
       tokens = query.split /\s+/
-      cost = NaN
+      cost = -1
       for token in tokens
-        tokenInt = parseInt(token)
-        # Not a number
-        if not tokenInt or !/^[1-9][0-9]*$/.test(token) # covers +2 attack
-          # If we have a cost previously and current it's mana, attack, or
-          # health
-          if cost > 0
+        # Any number by itself is interpreted to be either mana, attack, or
+        # health. This separates us from cases such as "+2 attack"
+        if /^(0|[1-9]\d*)$/.test(token)
+          # Save the cost and move to next token
+          cost = parseInt(token)
+        else
+          # If we have a cost previously and the current token is  mana, attack,
+          # or health
+          if cost >= 0
             if /^mana$/i.test(token)
               filters.mana.push "#{cost}"
             else if /^attack[s]?$/i.test(token)
               filters.attack.push "#{cost}"
-            else if /^health$/i.test(token)
+            else if /^health|durability$/i.test(token)
               filters.health.push "#{cost}"
             else
-              # cost didn't match with anything, "a bananas" for example
+              # Cost didn't match with anything, "2 bananas" for example
               filters.text.push "#{cost}"
               $scope.parseToken(token, filters)
-            cost = NaN # Empty out the cost
+            cost = -1 # Reset the cost
           else
             # We don't have a cost previously
             $scope.parseToken(token, filters)
-        else
-          # Save the cost and move to next token
-          cost = tokenInt
 
       # console.log ("#{type}: #{value}" for type, value of filters when value.length > 0)
 
