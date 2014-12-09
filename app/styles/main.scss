@@ -2,7 +2,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $grid-gutter-width: 0 !default;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "Hover/scss/_options.scss";
+@import "Hover/scss/_mixins.scss";
+@import "Hover/scss/_hacks.scss";
+@import "Hover/scss/effects/_float-shadow.scss";
 // endbower
+
+.float-shadow {
+  @include float-shadow();
+}
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;

@@ -485,6 +485,10 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
+  ]);
+
+  grunt.registerTask('release', [
+    'build',
     'aws_s3:dist'
   ]);
 
