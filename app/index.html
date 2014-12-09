@@ -44,11 +44,9 @@
         </div>
       </div>
 
-      <div class="row" id="cards">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="card in
-          shown | orderBy:sort">
-          <img ng-src="images/{{card.img}}" alt="..." class="img-responsive
-          center-block">
+      <div class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="card in shown">
+          <img ng-src="images/{{card.img}}" class="img-responsive center-block">
         </div>
       </div>
 
@@ -85,6 +83,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -97,6 +96,7 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

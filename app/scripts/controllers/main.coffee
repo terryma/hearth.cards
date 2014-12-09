@@ -4,17 +4,37 @@ angular.element(document).ready ->
   $('input[autofocus]:visible:first').focus()
 
 angular.module('hearthCardsApp')
-  .controller 'MainCtrl', ($scope, $filter, $http) ->
+  .controller 'MainCtrl', ($scope, $filter, cards) ->
+
+    # Number of cards we load per infinite-scroll cycle
+    $scope.cardsPerLoad = 20
+
+    # User entered search query
     $scope.query = ''
-    $http.get('/cards.json').success (cards) ->
-      # Only show draftable cards now
-      $scope.cards = (card for card in cards when card.draftable)
-      $scope.shown = $scope.cards
 
-    # called by orderBy
-    $scope.sort = (card) ->
-      return parseInt(card.mana)
+    # All the cards in the game. This is defined as a constant instead of loaded from a json file async to reduce
+    # CloudFront/S3 roundtrips, as well as to take advantage of build time minification
+    $scope.allCards = cards
 
+    # All the draftable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
+    $scope.draftable = _.sortBy (card for card in cards when card.draftable), (card) -> parseInt(card.mana)
+
+    # The entire set of cards matching the search. This starts out being all the draftable cards
+    $scope.filtered = $scope.draftable
+
+    # The subset of filtered cards that we've shown to the user already. Infinite-scroll keeps appending more cards to
+    # this set until the user has scrolled to the bottom of the page. Starts out with cardsPerLoad
+    $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
+
+    # Called by infinite-scroll to load more cards outside the user's current viewport
+    $scope.load = ->
+      $scope.shown.push $scope.filtered[$scope.shown.length..$scope.shown.length+$scope.cardsPerLoad]...
+
+    # Called by orderBy to give the cards some default sorting. ATM we always sort by mana cost in ascending order
+    # $scope.sort = (card) ->
+      # return parseInt(card.mana)
+
+    # TODO From here on out, clean up and document
     $scope.parseToken = (token, filters) ->
       # Handle some words that don't impact search results
       if /^with$/.test token
@@ -108,9 +128,10 @@ angular.module('hearthCardsApp')
           expression[category] = filters[category][0]
 
       if empty
+        $scope.filtered = []
         $scope.shown = []
       else
-        $scope.shown = $filter('filter')($scope.cards, (value, index) ->
+        $scope.filtered = $filter('filter')($scope.draftable, (value, index) ->
           for category, input of expression
             # Special logic for 'neutral'
             if category == 'class' and input.toUpperCase() == 'NEUTRAL'
@@ -125,4 +146,5 @@ angular.module('hearthCardsApp')
               return false
           return true
         )
+        $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
 
