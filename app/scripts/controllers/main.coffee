@@ -39,6 +39,11 @@ angular.module('hearthCardsApp')
       # Handle some words that don't impact search results
       if /^with$/.test token
         return
+      else if /^(0|[1-9]\d*)\/(0|[1-9]\d*)$/.test token
+        # 2/3 for 2 attack 3 health
+        pair = token.split('/')
+        filters.attack.push pair[0]
+        filters.health.push pair[1]
       else if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
         filters.class.push token
       else if /^minion[s]?$/i.test token
