@@ -65,7 +65,8 @@ angular
             "mana": "5",
             "attack": "5",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "359-baine-bloodhoof",
@@ -77,7 +78,8 @@ angular
             "mana": "4",
             "attack": "4",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "539-baron-geddon",
@@ -225,7 +227,8 @@ angular
             "mana": "2",
             "attack": "3",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12290-flame-leviathan",
@@ -776,7 +779,8 @@ angular
             "mana": "8",
             "attack": "4",
             "health": "8",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12296-voljin",
@@ -1538,7 +1542,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12278-shadowbomber",
@@ -1650,7 +1655,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12242-steamwheedle-sniper",
@@ -2413,7 +2419,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12214-illuminator",
@@ -2439,7 +2446,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "178-imp-master",
@@ -3192,7 +3200,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "389-stampeding-kodo",
@@ -3465,7 +3474,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "517-ancient-teachings",
@@ -3478,7 +3488,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "504-arathi-weaponsmith",
@@ -3531,7 +3542,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "403-battle-axe",
@@ -3543,7 +3555,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "664-battle-rage",
@@ -3571,7 +3584,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "198-betrayal",
@@ -3611,7 +3625,8 @@ angular
             "mana": "3",
             "attack": "3",
             "health": "8",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "196-blood-imp",
@@ -3654,7 +3669,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "38-circle-of-healing",
@@ -3750,7 +3766,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "128-dark-iron-dwarf",
@@ -3790,7 +3807,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "9-defias-bandit",
@@ -3802,7 +3820,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "417-defias-ringleader",
@@ -3829,7 +3848,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "452-demonfire",
@@ -3856,7 +3876,8 @@ angular
             "mana": "5",
             "attack": "5",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "305-dire-wolf-alpha",
@@ -3883,7 +3904,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "261-dread-corsair",
@@ -3910,7 +3932,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "587-druid-of-the-claw",
@@ -3939,7 +3962,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "45-druid-of-the-claw",
@@ -3954,7 +3978,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "129-dust-devil",
@@ -4008,7 +4033,8 @@ angular
             "mana": "4",
             "attack": "7",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "382-eviscerate",
@@ -4103,7 +4129,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "610-flesheating-ghoul",
@@ -4169,7 +4196,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "386-harvest-golem",
@@ -4195,7 +4223,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "290-hound",
@@ -4209,7 +4238,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "672-ice-barrier",
@@ -4251,7 +4281,8 @@ angular
             "mana": "6",
             "attack": "6",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "207-inner-fire",
@@ -4320,7 +4351,8 @@ angular
             "mana": "3",
             "attack": "3",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "204-leader-of-the-pack",
@@ -4333,7 +4365,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "513-leper-gnome",
@@ -4441,7 +4474,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "133-mark-of-nature",
@@ -4454,7 +4488,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "569-mirror-entity",
@@ -4494,7 +4529,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "154-naturalize",
@@ -4521,7 +4557,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "158-noble-sacrifice",
@@ -4548,7 +4585,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "485-nourish",
@@ -4561,7 +4599,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "190-panther",
@@ -4575,7 +4614,8 @@ angular
             "mana": "2",
             "attack": "3",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "165-power-of-the-wild",
@@ -4684,7 +4724,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "475-scarlet-crusader",
@@ -4753,7 +4794,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "24-shieldbearer",
@@ -4834,7 +4876,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "553-snipe",
@@ -4928,7 +4971,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "469-squirrel",
@@ -4941,7 +4985,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "653-starfall",
@@ -4954,7 +4999,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "195-starfall",
@@ -4967,7 +5013,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "152-stormforged-axe",
@@ -5008,7 +5055,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "566-summoning-portal",
@@ -5088,7 +5136,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "181-treant",
@@ -5101,7 +5150,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "337-treant",
@@ -5115,7 +5165,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "51-unbound-elemental",
@@ -5156,7 +5207,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "509-venture-co-mercenary",
@@ -5180,7 +5232,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "527-whelp",
@@ -5192,7 +5245,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "719-whelp",
@@ -5204,7 +5258,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "675-windfury-harpy",
@@ -5257,7 +5312,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "633-wrath",
@@ -5284,7 +5340,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "501-wrath",
@@ -5297,7 +5354,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "629-young-dragonhawk",
@@ -5337,7 +5395,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "74-acidic-swamp-ooze",
@@ -5459,7 +5518,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "376-barrel",
@@ -5472,7 +5532,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "606-barrel-toss",
@@ -5485,7 +5546,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "29-blessing-of-kings",
@@ -5540,7 +5602,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "27-booty-bay-bodyguard",
@@ -5565,7 +5628,8 @@ angular
             "mana": "4",
             "attack": "4",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12233-burly-rockjaw-trogg",
@@ -5712,7 +5776,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "393-crazy-monkey",
@@ -5725,7 +5790,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "388-dalaran-mage",
@@ -5833,7 +5899,8 @@ angular
             "mana": "6",
             "attack": "4",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "356-elven-archer",
@@ -5901,7 +5968,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "455-flame-of-azzinoth",
@@ -5913,7 +5981,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12192-flamecannon",
@@ -6013,7 +6082,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "49-frost-nova",
@@ -6106,7 +6176,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12286-gnomeregan-infantry",
@@ -6214,7 +6285,8 @@ angular
             "mana": "2",
             "attack": "1",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "443-hogger-smash",
@@ -6227,7 +6299,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "671-holy-nova",
@@ -6256,7 +6329,8 @@ angular
             "mana": "3",
             "attack": "4",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "189-humility",
@@ -6379,7 +6453,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "32-leokk",
@@ -6394,7 +6469,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "414-lord-of-the-arena",
@@ -6432,7 +6508,8 @@ angular
             "mana": "4",
             "attack": "5",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "680-mechanical-dragonling",
@@ -6445,7 +6522,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12253-mechanical-yeti",
@@ -6543,7 +6621,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "593-misha",
@@ -6558,7 +6637,8 @@ angular
             "mana": "3",
             "attack": "4",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "619-moonfire",
@@ -6599,7 +6679,8 @@ angular
             "mana": "6",
             "attack": "10",
             "health": "10",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "486-murloc-scout",
@@ -6612,7 +6693,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "357-murloc-tidehunter",
@@ -6639,7 +6721,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12281-ogre-brute",
@@ -6691,7 +6774,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12191-piloted-shredder",
@@ -6743,7 +6827,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "348-sacrificial-pact",
@@ -6810,7 +6895,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "547-shadow-word-death",
@@ -6850,7 +6936,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "493-shield-block",
@@ -6947,7 +7034,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12230-snowchugger",
@@ -7045,7 +7133,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12266-stonesplinter-trogg",
@@ -7165,7 +7254,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "293-truesilver-champion",
@@ -7261,7 +7351,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "274-water-elemental",
@@ -7317,7 +7408,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "151-windspeaker",
@@ -7428,7 +7520,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "471-backstab",
@@ -7635,7 +7728,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "258-healing-touch",
@@ -7989,7 +8083,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "326-senjin-shieldmasta",
@@ -8043,7 +8138,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "205-sinister-strike",
@@ -8072,7 +8168,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "76-stonetusk-boar",
@@ -8185,7 +8282,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "282-wild-growth",
@@ -8241,7 +8339,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "110-anduin-wrynn",
@@ -8302,7 +8401,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "253-armor-up",
@@ -8329,7 +8429,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7729-avenge",
@@ -8391,7 +8492,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12345-burrowing-mine",
@@ -8404,7 +8506,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7815-chains",
@@ -8441,7 +8544,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12355-chicken",
@@ -8453,7 +8557,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "201-dagger-mastery",
@@ -8507,7 +8612,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12336-dark-wispers",
@@ -8520,7 +8626,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7854-deathbloom",
@@ -8532,7 +8639,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7762-deathcharger",
@@ -8544,7 +8652,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7753-deathlord",
@@ -8608,7 +8717,8 @@ angular
             "mana": "5",
             "attack": "7",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7732-duplicate",
@@ -8662,7 +8772,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12372-emergency-coolant",
@@ -8674,7 +8785,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7792-enrage",
@@ -8686,7 +8798,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7846-eruption",
@@ -8723,7 +8836,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7781-fallout-slime",
@@ -8734,7 +8848,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7745-feugen",
@@ -8759,7 +8874,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12370-finicky-cloakfield",
@@ -8771,7 +8887,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "677-fireblast",
@@ -8845,7 +8962,8 @@ angular
             "mana": "5",
             "attack": "2",
             "health": "10",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12327-gallywixs-coin",
@@ -8857,7 +8975,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "635-garrosh-hellscream",
@@ -8896,7 +9015,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12332-gift-of-mana",
@@ -8909,7 +9029,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7784-gluth",
@@ -9009,7 +9130,8 @@ angular
             "mana": "4",
             "attack": "3",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7814-guardian-of-icecrown",
@@ -9021,7 +9143,8 @@ angular
             "mana": "4",
             "attack": "5",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "618-guldan",
@@ -9159,7 +9282,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7773-hook",
@@ -9171,7 +9295,8 @@ angular
             "mana": "3",
             "attack": "5",
             "health": "8",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7774-hook",
@@ -9183,7 +9308,8 @@ angular
             "mana": "3",
             "attack": "4",
             "health": "8",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "714-i-am-murloc",
@@ -9195,7 +9321,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "223-illidan-stormrage",
@@ -9220,7 +9347,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "83-inferno",
@@ -9293,7 +9421,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7791-jaws",
@@ -9305,7 +9434,8 @@ angular
             "mana": "1",
             "attack": "3",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7742-kelthuzad",
@@ -9364,7 +9494,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7879-lady-blaumeux",
@@ -9376,7 +9507,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "126-lesser-heal",
@@ -9451,7 +9583,8 @@ angular
             "mana": "7",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "406-lord-jaraxxus",
@@ -9550,7 +9683,8 @@ angular
             "mana": "5",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7863-massive-runeblade",
@@ -9562,7 +9696,8 @@ angular
             "mana": "3",
             "attack": "5",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7864-massive-runeblade",
@@ -9574,7 +9709,8 @@ angular
             "mana": "3",
             "attack": "10",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "330-millhouse-manastorm",
@@ -9599,7 +9735,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "229-mind-shatter",
@@ -9637,7 +9774,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7818-mr-bigglesworth",
@@ -9651,7 +9789,8 @@ angular
             "mana": "0",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "715-murloc",
@@ -9663,7 +9802,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7782-mutating-injection",
@@ -9675,7 +9815,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7889-necroknight",
@@ -9687,7 +9828,8 @@ angular
             "mana": "4",
             "attack": "5",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7851-necrotic-aura",
@@ -9723,7 +9865,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7755-nerubar-weblord",
@@ -9748,7 +9891,8 @@ angular
             "mana": "3",
             "attack": "4",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7820-nerubian",
@@ -9759,7 +9903,8 @@ angular
             "mana": "2",
             "attack": "4",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7823-nerubian",
@@ -9770,7 +9915,8 @@ angular
             "mana": "2",
             "attack": "3",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7738-nerubian-egg",
@@ -9795,7 +9941,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7837-noth-the-plaguebringer",
@@ -9853,7 +10000,8 @@ angular
             "mana": "6",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7779-poison-cloud",
@@ -9917,7 +10065,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "717-power-of-the-horde",
@@ -9929,7 +10078,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7806-pure-cold",
@@ -9941,7 +10091,8 @@ angular
             "mana": "5",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7828-rain-of-fire",
@@ -10031,7 +10182,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12373-reversing-switch",
@@ -10043,7 +10195,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "484-rexxar",
@@ -10068,7 +10221,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7884-runeblade",
@@ -10080,7 +10234,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7885-runeblade",
@@ -10092,7 +10247,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12369-rusty-horn",
@@ -10104,7 +10260,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7802-sapphiron",
@@ -10179,7 +10336,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7883-sir-zeliek",
@@ -10191,7 +10349,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7890-skeletal-smith",
@@ -10203,7 +10362,8 @@ angular
             "mana": "3",
             "attack": "4",
             "health": "3",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7839-skeleton",
@@ -10214,7 +10374,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7840-skeleton",
@@ -10225,7 +10386,8 @@ angular
             "mana": "5",
             "attack": "5",
             "health": "5",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7821-skitter",
@@ -10261,7 +10423,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7749-sludge-belcher",
@@ -10299,7 +10462,8 @@ angular
             "mana": "5",
             "attack": "0",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7760-spectral-spider",
@@ -10310,7 +10474,8 @@ angular
             "mana": "1",
             "attack": "1",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7871-spectral-trainee",
@@ -10322,7 +10487,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7873-spectral-warrior",
@@ -10334,7 +10500,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7855-spore",
@@ -10346,7 +10513,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "1",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7857-sporeburst",
@@ -10358,7 +10526,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7744-stalagg",
@@ -10383,7 +10552,8 @@ angular
             "mana": "5",
             "attack": "7",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "481-steady-shot",
@@ -10422,7 +10592,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "12330-tank-mode",
@@ -10435,7 +10606,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7759-thaddius",
@@ -10447,7 +10619,8 @@ angular
             "mana": "10",
             "attack": "11",
             "health": "11",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7794-thaddius",
@@ -10481,7 +10654,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7881-thane-korthazz",
@@ -10493,7 +10667,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "141-the-coin",
@@ -10505,7 +10680,8 @@ angular
             "mana": "0",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "319-thrall",
@@ -10530,7 +10706,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "316-totemic-call",
@@ -10556,7 +10733,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7861-unbalancing-strike",
@@ -10592,7 +10770,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "7",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7737-undertaker",
@@ -10629,7 +10808,8 @@ angular
             "mana": "6",
             "attack": "5",
             "health": "6",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7870-unrelenting-trainee",
@@ -10641,7 +10821,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "2",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7872-unrelenting-warrior",
@@ -10653,7 +10834,8 @@ angular
             "mana": "3",
             "attack": "3",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7757-unstable-ghoul",
@@ -10771,7 +10953,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7830-worshipper",
@@ -10783,7 +10966,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "7831-worshipper",
@@ -10795,7 +10979,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "4",
-            "draftable": false
+            "draftable": false,
+            "isToken": true
         },
         {
             "id": "683-zombie-chow",
