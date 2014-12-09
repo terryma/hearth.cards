@@ -35,6 +35,10 @@ angular.module('hearthCardsApp')
       # return parseInt(card.mana)
 
     # TODO From here on out, clean up and document
+    $scope.percentCircleCssClass = ->
+      percent = Math.round($scope.filtered.length / $scope.draftable.length * 100)
+      "c100 p#{percent} small center"
+
     $scope.parseToken = (token, filters) ->
       # Handle some words that don't impact search results
       if /^with$/.test token

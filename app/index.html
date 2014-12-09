@@ -44,6 +44,18 @@
         </div>
       </div>
 
+      <div class="row text-center" ng-cloak>
+        <div class="col-lg-12">
+          <div ng-class="percentCircleCssClass()">
+            <span>{{filtered.length}}</span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2">
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-repeat="card in shown">
           <img ng-src="images/{{card.img}}" class="img-responsive center-block">
