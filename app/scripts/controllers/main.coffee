@@ -63,7 +63,7 @@ angular.module('hearthCardsApp')
         filters.race.push 'Pirate'
       else if /^totem[s]?$/i.test token
         filters.race.push 'Totem'
-      else if /^expert$/i.test token
+      else if /^expert|classic$/i.test token
         filters.set.push 'Expert'
       else if /^gvg$/i.test token
         filters.set.push 'Goblins vs Gnomes'
