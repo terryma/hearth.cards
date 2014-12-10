@@ -4,13 +4,13 @@ angular.element(document).ready ->
   $('input[autofocus]:visible:first').focus()
 
 angular.module('hearthCardsApp')
-  .controller 'MainCtrl', ($scope, $filter, cards) ->
+  .controller 'MainCtrl', ($scope, $filter, $location, cards) ->
 
     # Number of cards we load per infinite-scroll cycle
     $scope.cardsPerLoad = 20
 
-    # User entered search query
-    $scope.query = ''
+    # User entered search query. Get it from the url if it's there
+    $scope.query = if $location.path()? then $location.path()[1..]
 
     # All the cards in the game. This is defined as a constant instead of loaded from a json file async to reduce
     # CloudFront/S3 roundtrips, as well as to take advantage of build time minification
@@ -19,20 +19,16 @@ angular.module('hearthCardsApp')
     # All the draftable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
     $scope.draftable = _.sortBy (card for card in cards when card.draftable), (card) -> parseInt(card.mana)
 
-    # The entire set of cards matching the search. This starts out being all the draftable cards
-    $scope.filtered = $scope.draftable
+    # The entire set of cards matching the search.
+    $scope.filtered = null
 
     # The subset of filtered cards that we've shown to the user already. Infinite-scroll keeps appending more cards to
-    # this set until the user has scrolled to the bottom of the page. Starts out with cardsPerLoad
-    $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
+    # this set until the user has scrolled to the bottom of the page.
+    $scope.shown = null
 
     # Called by infinite-scroll to load more cards outside the user's current viewport
     $scope.load = ->
       $scope.shown.push $scope.filtered[$scope.shown.length..$scope.shown.length+$scope.cardsPerLoad]...
-
-    # Called by orderBy to give the cards some default sorting. ATM we always sort by mana cost in ascending order
-    # $scope.sort = (card) ->
-      # return parseInt(card.mana)
 
     # TODO From here on out, clean up and document
     $scope.percentCircleCssClass = ->
@@ -86,6 +82,9 @@ angular.module('hearthCardsApp')
         filters.text.push token
 
     $scope.search = (query) ->
+      # Update the url but don't save the history
+      $location.path("/"+query).replace()
+
       filters =
         mana: []
         attack: []
@@ -157,3 +156,5 @@ angular.module('hearthCardsApp')
         )
         $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
 
+    # Perform a search at the beginning
+    $scope.search($scope.query)
