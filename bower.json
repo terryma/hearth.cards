@@ -24,7 +24,8 @@
         "scss/_options.scss",
         "scss/_mixins.scss",
         "scss/_hacks.scss",
-        "scss/effects/_float-shadow.scss"
+        "scss/effects/_float-shadow.scss",
+        "scss/effects/_glow.scss"
       ]
     }
   }

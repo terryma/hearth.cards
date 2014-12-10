@@ -406,6 +406,10 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.coffee',
         singleRun: true
+      },
+      continuous: {
+        configFile: 'test/karma.conf.coffee',
+        singleRun: false
       }
     },
 
@@ -462,12 +466,22 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
+  // Used for continuous unit test
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma:continuous'
+  ]);
+
+  // Used for running the test once during build
+  grunt.registerTask('unit', [
+    'clean:server',
+    'concurrent:test',
+    'autoprefixer',
+    'connect:test',
+    'karma:unit'
   ]);
 
   grunt.registerTask('build', [
@@ -484,17 +498,13 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('release', [
+    // 'newer:jshint',
+    'unit',
     'build',
     'aws_s3:dist'
-  ]);
-
-  grunt.registerTask('default', [
-    'newer:jshint',
-    'test',
-    'build'
   ]);
 };

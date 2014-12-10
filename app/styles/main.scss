@@ -6,9 +6,13 @@ $grid-gutter-width: 0 !default;
 @import "Hover/scss/_mixins.scss";
 @import "Hover/scss/_hacks.scss";
 @import "Hover/scss/effects/_float-shadow.scss";
+@import "Hover/scss/effects/_glow.scss";
 // endbower
 @import "circle";
 
+.glow {
+  @include glow();
+}
 .float-shadow {
   @include float-shadow();
 }

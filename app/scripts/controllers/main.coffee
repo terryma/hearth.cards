@@ -52,7 +52,7 @@ angular.module('hearthCardsApp')
         filters.type.push 'Weapon'
       else if /^spell[s]?$|^ability$|^abilities$/i.test token
         filters.type.push 'Ability'
-      else if /^legendary$|^epic$|^rare$|^common$/i.test token
+      else if /^legendary$|^epic$|^rare$|^common$|^free$/i.test token
         filters.rarity.push token
       else if /^beast[s]?$/i.test token
         filters.race.push 'Beast'
@@ -68,6 +68,8 @@ angular.module('hearthCardsApp')
         filters.race.push 'Pirate'
       else if /^totem[s]?$/i.test token
         filters.race.push 'Totem'
+      else if /^basic$/i.test token
+        filters.set.push 'Basic'
       else if /^expert|classic$/i.test token
         filters.set.push 'Expert'
       else if /^gvg$/i.test token
