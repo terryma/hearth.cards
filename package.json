@@ -1,6 +1,6 @@
 {
-  "name": "hearthCards",
-  "version": "0.0.0",
+  "name": "hearth-cards",
+  "version": "1.0",
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "^1.8.0",

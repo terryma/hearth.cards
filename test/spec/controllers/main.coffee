@@ -107,5 +107,10 @@ describe 'Controller: MainCtrl', ->
     search '6/2 charge', 1
     search 'windfury divine shield taunt charge', 1
 
+  it 'search should work for spell damage +1', ->
+    # FIXME Note that this should actually return 10, but since 'spell' takes precedence in the current implementation,
+    # it doesn't work.
+    search 'spell damage +1', 1
+
   it 'search should work for not found', ->
     search 'batman', 0
