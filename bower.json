@@ -8,7 +8,8 @@
     "bootstrap-sass-official": "^3.2.0",
     "underscore": "~1.7.0",
     "ngInfiniteScroll": "1.0.0",
-    "Hover": "~1.0.9"
+    "Hover": "~1.0.9",
+    "font-awesome": "~4.2.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0",
@@ -26,6 +27,11 @@
         "scss/_hacks.scss",
         "scss/effects/_float-shadow.scss",
         "scss/effects/_glow.scss"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss"
       ]
     }
   }

@@ -1,5 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $grid-gutter-width: 0 !default;
+$fa-font-path: "../bower_components/font-awesome/fonts/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "Hover/scss/_options.scss";
@@ -7,6 +8,7 @@ $grid-gutter-width: 0 !default;
 @import "Hover/scss/_hacks.scss";
 @import "Hover/scss/effects/_float-shadow.scss";
 @import "Hover/scss/effects/_glow.scss";
+@import "font-awesome/scss/font-awesome.scss";
 // endbower
 @import "circle";
 
