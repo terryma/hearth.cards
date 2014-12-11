@@ -57,7 +57,7 @@
       </div>
 
       <div class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-repeat="card in shown">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-repeat="card in shown track by card.id">
           <img ng-src="images/{{card.img}}" class="img-responsive center-block">
         </div>
       </div>
