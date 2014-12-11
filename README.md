@@ -3,7 +3,8 @@ This is the codebase for [http://hearth.cards](http://hearth.cards), a tool for 
 
 # Development
 * Run ```grunt serve``` to run the local server for testing.
-* Run ```grunt test``` to run unit tests using karma/jasmine/phantomjs.
+* Run ```grunt continous-test``` to run unit tests using karma/jasmine/phantomjs. This runs the test continuously in the background as you make changes to scripts/tests.
+* Run ```grunt test`` to run unit tests once.
 * Run ```grunt build``` to build the project. This creates ```/dist``` which contains the deployable site.
 * Run ```grunt release``` to run unit test, build, and deploy the project to S3.
 

@@ -467,7 +467,7 @@ module.exports = function (grunt) {
   });
 
   // Used for continuous unit test
-  grunt.registerTask('test', [
+  grunt.registerTask('continuous-test', [
     'clean:server',
     'concurrent:test',
     'autoprefixer',
@@ -476,7 +476,7 @@ module.exports = function (grunt) {
   ]);
 
   // Used for running the test once during build
-  grunt.registerTask('unit', [
+  grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
     'autoprefixer',
@@ -503,7 +503,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('release', [
     // 'newer:jshint',
-    'unit',
+    'test',
     'build',
     'aws_s3:dist'
   ]);
