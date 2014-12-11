@@ -30,11 +30,12 @@ angular.module('hearthCardsApp')
     $scope.load = ->
       $scope.shown.push $scope.filtered[$scope.shown.length..$scope.shown.length+$scope.cardsPerLoad]...
 
-    # TODO From here on out, clean up and document
+    # Generate the css class for the percentage circle used to indicate the number of filtered results
     $scope.percentCircleCssClass = ->
       percent = Math.round($scope.filtered.length / $scope.draftable.length * 100)
       "c100 p#{percent} small center"
 
+    # Handles translating independent keyword from the query into its corresponding search filters
     $scope.parseToken = (token, filters) ->
       # Handle some words that don't impact search results
       if /^with$/.test token
@@ -83,6 +84,7 @@ angular.module('hearthCardsApp')
       else
         filters.text.push token
 
+    # Perform search based on user submitted query.
     $scope.search = (query) ->
       # Update the url but don't save the history
       $location.path("/"+query).replace()
@@ -96,7 +98,7 @@ angular.module('hearthCardsApp')
         rarity: []
         set: []
         race: []
-        text: [] # this goes on name and card text
+        text: [] # This filters based on card name and card text
 
       tokens = query.split /\s+/
       cost = -1
@@ -130,7 +132,7 @@ angular.module('hearthCardsApp')
       empty = false
       expression = {}
       for category in ['mana', 'attack', 'health', 'class', 'type', 'rarity', 'set', 'race']
-        # can't have more than one value for each category here
+        # Can't have more than one value for each category here
         if filters[category].length > 1
           empty = true
           break
@@ -149,7 +151,7 @@ angular.module('hearthCardsApp')
             else
               return false if !value[category]? or input.toUpperCase() != value[category].toUpperCase()
 
-          # for any of text, if name or card text contains it
+          # Filter based on card name and card text
           for text in filters.text
             regex = new RegExp(text.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"), "i")
             if !regex.test(value.name) and !regex.test(value.text)

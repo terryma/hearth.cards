@@ -7,6 +7,7 @@
  # # hearthCardsApp
  #
  # Main module of the application.
+ # We're inlining the card db here instead of loading from cards.json to save another roundtrip to the server.
 ###
 angular
   .module('hearthCardsApp', ['infinite-scroll'])
