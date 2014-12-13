@@ -16,15 +16,28 @@ angular.module('hearthCardsApp')
     # CloudFront/S3 roundtrips, as well as to take advantage of build time minification
     $scope.allCards = cards
 
+    # Map all cards to be indexed by their id
+    $scope.allCardsMap = cards.reduce (map, card) ->
+      map[card.id] = card
+      map
+    , {}
+
+    # $scope.tokens = (card for card in $scope.allCards when card.isToken?)
+
+    # $scope.tokensMap = cards.reduce (map, card) ->
+      # (map[summoner] ||= []).push card for summoner in card.summons if card.summons?
+      # map
+    # , {}
+
     # All the draftable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
     $scope.draftable = _.sortBy (card for card in cards when card.draftable), (card) -> parseInt(card.mana)
 
     # The entire set of cards matching the search.
-    $scope.filtered = null
+    $scope.filtered = []
 
     # The subset of filtered cards that we've shown to the user already. Infinite-scroll keeps appending more cards to
     # this set until the user has scrolled to the bottom of the page.
-    $scope.shown = null
+    $scope.shown = []
 
     # Called by infinite-scroll to load more cards outside the user's current viewport
     $scope.load = ->
@@ -34,6 +47,12 @@ angular.module('hearthCardsApp')
     $scope.percentCircleCssClass = ->
       percent = Math.round($scope.filtered.length / $scope.draftable.length * 100)
       "c100 p#{percent} small center"
+
+    # Shows detailed card info and related cards. Called when card is clicked or the only search result
+    $scope.show = (card) ->
+      $scope.query = card.name
+      $scope.createNewHistoryRecord = true
+      $scope.search($scope.query)
 
     # Handles translating independent keyword from the query into its corresponding search filters
     $scope.parseToken = (token, filters) ->
@@ -81,14 +100,44 @@ angular.module('hearthCardsApp')
         # special logic for "secrets", since it's in the card text and not a
         # category
         filters.text.push 'Secret'
+      else if /^summons$/i.test token
+        # special logic for "summons", shows all cards that summons something else
+        filters.summons.push 'Summons'
       else
         filters.text.push token
 
-    # Perform search based on user submitted query.
-    $scope.search = (query) ->
-      # Update the url but don't save the history
-      $location.path("/"+query).replace()
+    # Flag to indicate whether we should create a new history record or replacing the existing one
+    $scope.createNewHistoryRecord = true
 
+    # Flag to indicate whether the change in URL originated from a change in user input or from browser back/forward
+    # buttons
+    $scope.locationChangeFromSearch = false
+
+    # Every time the url changes, we perform a search update
+    $scope.$on '$locationChangeStart', (event) ->
+      $scope.query = $location.path()[1..]
+      $scope.update($scope.query)
+
+    # Every time after a url change, we update our state flags to maintain sane browser history.
+    $scope.$on '$locationChangeSuccess', (event) ->
+      if !$scope.locationChangeFromSearch
+        $scope.createNewHistoryRecord = true
+      $scope.locationChangeFromSearch = false
+
+    # Get a list of cards related to the current card
+    $scope.related = (card) ->
+      $scope.allCardsMap[cardId] for cardId in card.summons || []
+
+    # Perform search based on user input from the search input text box.
+    $scope.search = (query) ->
+      # Instruct the history handler to not save every user keystroke into browser history
+      $scope.locationChangeFromSearch = true
+      $location.path("/" + query)
+      $location.replace() if !$scope.createNewHistoryRecord
+      $scope.createNewHistoryRecord = false
+
+    # Perform search based on a query. Query can be user submitted from the search input, or from direct url changes.
+    $scope.update = (query) ->
       filters =
         mana: []
         attack: []
@@ -98,6 +147,7 @@ angular.module('hearthCardsApp')
         rarity: []
         set: []
         race: []
+        summons: []
         text: [] # This filters based on card name and card text
 
       tokens = query.split /\s+/
@@ -151,14 +201,16 @@ angular.module('hearthCardsApp')
             else
               return false if !value[category]? or input.toUpperCase() != value[category].toUpperCase()
 
+          # Take care of the 'summons' keyword
+          if filters.summons.length > 0
+            return false if !value['summons']?
+
           # Filter based on card name and card text
           for text in filters.text
             regex = new RegExp(text.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"), "i")
             if !regex.test(value.name) and !regex.test(value.text)
               return false
           return true
+
         )
         $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
-
-    # Perform a search at the beginning
-    $scope.search($scope.query)

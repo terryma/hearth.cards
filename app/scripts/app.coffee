@@ -53,7 +53,8 @@ angular
             "mana": "7",
             "attack": "5",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["522-fireball"]
         },
         {
             "id": "53-ashbringer",
@@ -147,7 +148,8 @@ angular
             "mana": "6",
             "attack": "4",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["359-baine-bloodhoof"]
         },
         {
             "id": "267-captain-greenskin",
@@ -175,7 +177,8 @@ angular
             "mana": "9",
             "attack": "5",
             "health": "8",
-            "draftable": true
+            "draftable": true,
+            "summons": ["358-demigods-favor", "159-shandos-lesson", "181-treant"]
         },
         {
             "id": "474-deathwing",
@@ -202,7 +205,8 @@ angular
             "mana": "7",
             "attack": "7",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12361-boom-bot"]
         },
         {
             "id": "3-edwin-vancleef",
@@ -352,7 +356,8 @@ angular
             "mana": "6",
             "attack": "4",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["565-gnoll"]
         },
         {
             "id": "203-illidan-stormrage",
@@ -366,7 +371,8 @@ angular
             "mana": "6",
             "attack": "7",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["685-flame-of-azzinoth"]
         },
         {
             "id": "12295-iron-juggernaut",
@@ -381,7 +387,8 @@ angular
             "mana": "6",
             "attack": "6",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12345-burrowing-mine"]
         },
         {
             "id": "194-king-krush",
@@ -410,7 +417,8 @@ angular
             "mana": "3",
             "attack": "5",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["231-bananas"]
         },
         {
             "id": "674-leeroy-jenkins",
@@ -423,7 +431,8 @@ angular
             "mana": "5",
             "attack": "6",
             "health": "2",
-            "draftable": true
+            "draftable": true,
+            "summons": ["527-whelp"]
         },
         {
             "id": "482-lord-jaraxxus",
@@ -438,7 +447,8 @@ angular
             "mana": "9",
             "attack": "3",
             "health": "15",
-            "draftable": true
+            "draftable": true,
+            "summons": ["406-lord-jaraxxus", "669-blood-fury", "121-infernal"]
         },
         {
             "id": "456-lorewalker-cho",
@@ -509,7 +519,8 @@ angular
             "mana": "9",
             "attack": "9",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["513-leper-gnome"]
         },
         {
             "id": "339-millhouse-manastorm",
@@ -536,7 +547,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12362-v-07-tr-0n"]
         },
         {
             "id": "12282-mogor-the-ogre",
@@ -618,7 +630,8 @@ angular
             "mana": "9",
             "attack": "8",
             "health": "8",
-            "draftable": true
+            "draftable": true,
+            "summons": ["719-whelp"]
         },
         {
             "id": "228-prophet-velen",
@@ -675,6 +688,7 @@ angular
             "draftable": true
         },
         {
+            # FIXME This card doesn't work in search because name is too general
             "id": "179-the-beast",
             "name": "The Beast",
             "type": "Minion",
@@ -686,7 +700,8 @@ angular
             "mana": "6",
             "attack": "9",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["541-finkle-einhorn"]
         },
         {
             "id": "396-the-black-knight",
@@ -712,7 +727,8 @@ angular
             "mana": "3",
             "attack": "3",
             "health": "3",
-            "draftable": true
+            "draftable": true,
+            "summons": ["354-devilsaur", "469-squirrel"]
         },
         {
             "id": "391-tirion-fordring",
@@ -726,7 +742,8 @@ angular
             "mana": "8",
             "attack": "6",
             "health": "6",
-            "draftable": true
+            "draftable": true,
+            "summons": ["53-ashbringer"]
         },
         {
             "id": "12225-toshley",
@@ -739,7 +756,8 @@ angular
             "mana": "6",
             "attack": "5",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12366-armor-plating", "12372-emergency-coolant", "12370-finicky-cloakfield", "12373-reversing-switch", "12369-rusty-horn", "12368-time-rewinder", "12375-whirling-blades"]
         },
         {
             "id": "12291-trade-prince-gallywix",
@@ -753,7 +771,8 @@ angular
             "mana": "6",
             "attack": "5",
             "health": "8",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12327-gallywixs-coin"]
         },
         {
             "id": "12272-troggzor-the-earthinator",
@@ -766,7 +785,8 @@ angular
             "mana": "7",
             "attack": "6",
             "health": "6",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12233-burly-rockjaw-trogg"]
         },
         {
             "id": "12362-v-07-tr-0n",
@@ -809,7 +829,8 @@ angular
             "mana": "9",
             "attack": "4",
             "health": "12",
-            "draftable": true
+            "draftable": true,
+            "summons": ["235-ysera-awakens", "561-dream", "534-emerald-drake", "116-laughing-sister", "334-nightmare"]
         },
         {
             "id": "12218-ancestors-call",
@@ -837,7 +858,8 @@ angular
             "mana": "7",
             "attack": "5",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["517-ancient-teachings", "243-ancient-secrets"]
         },
         {
             "id": "242-ancient-of-war",
@@ -851,7 +873,8 @@ angular
             "mana": "7",
             "attack": "5",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["262-uproot", "375-rooted"]
         },
         {
             "id": "12245-anima-golem",
@@ -1060,7 +1083,8 @@ angular
             "mana": "6",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12336-dark-wispers", "12335-dark-wispers"]
         },
         {
             "id": "12237-demonheart",
@@ -1212,7 +1236,8 @@ angular
             "mana": "6",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["337-treant"]
         },
         {
             "id": "278-gladiators-longbow",
@@ -1351,7 +1376,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["582-shadow-of-nothing"]
         },
         {
             "id": "12262-mini-mage",
@@ -1615,7 +1641,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["512-snake"]
         },
         {
             "id": "324-southsea-captain",
@@ -1643,7 +1670,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["645-spellbender"]
         },
         {
             "id": "645-spellbender",
@@ -2269,7 +2297,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["451-spirit-wolf"]
         },
         {
             "id": "630-flare",
@@ -2364,7 +2393,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12333-gift-of-cards", "12332-gift-of-mana"]
         },
         {
             "id": "135-headcrack",
@@ -2461,7 +2491,8 @@ angular
             "mana": "3",
             "attack": "1",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["321-imp"]
         },
         {
             "id": "12302-imp-losion",
@@ -2475,7 +2506,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12339-imp"]
         },
         {
             "id": "209-injured-blademaster",
@@ -2531,7 +2563,8 @@ angular
             "mana": "4",
             "attack": "2",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["111-moonfire", "524-dispel"]
         },
         {
             "id": "12252-kezan-mystic",
@@ -2614,7 +2647,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["436-lightwarden"]
         },
         {
             "id": "676-lightning-storm",
@@ -2778,7 +2812,8 @@ angular
             "mana": "6",
             "attack": "7",
             "health": "6",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12366-armor-plating", "12372-emergency-coolant", "12370-finicky-cloakfield", "12373-reversing-switch", "12369-rusty-horn", "12368-time-rewinder", "12375-whirling-blades"]
         },
         {
             "id": "12254-metaltooth-leaper",
@@ -2877,7 +2912,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["268-silver-hand-recruit", "250-lights-justice"]
         },
         {
             "id": "120-nourish",
@@ -2891,7 +2927,8 @@ angular
             "mana": "5",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["58-nourish", "485-nourish"]
         },
         {
             "id": "12235-ogre-ninja",
@@ -3030,7 +3067,8 @@ angular
             "mana": "6",
             "attack": "6",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["689-hyena"]
         },
         {
             "id": "12240-scarlet-purifier",
@@ -3230,7 +3268,8 @@ angular
             "mana": "5",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["195-starfall", "653-starfall"]
         },
         {
             "id": "372-sunfury-protector",
@@ -3312,7 +3351,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["583-heavy-axe"]
         },
         {
             "id": "12185-upgraded-repair-bot",
@@ -3354,7 +3394,8 @@ angular
             "mana": "4",
             "attack": "3",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["63-violet-apprentice"]
         },
         {
             "id": "12259-vitality-totem",
@@ -3504,7 +3545,8 @@ angular
             "mana": "4",
             "attack": "3",
             "health": "3",
-            "draftable": true
+            "draftable": true,
+            "summons": ["403-battle-axe"]
         },
         {
             "id": "191-argent-protector",
@@ -3836,7 +3878,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": true
+            "draftable": true,
+            "summons": ["9-defias-bandit"]
         },
         {
             "id": "358-demigods-favor",
@@ -3948,7 +3991,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["408-druid-of-the-claw", "45-druid-of-the-claw", "662-bear-form", "287-cat-form"]
         },
         {
             "id": "408-druid-of-the-claw",
@@ -4212,7 +4256,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "3",
-            "draftable": true
+            "draftable": true,
+            "summons": ["200-damaged-golem"]
         },
         {
             "id": "583-heavy-axe",
@@ -4462,7 +4507,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["430-mark-of-nature", "133-mark-of-nature"]
         },
         {
             "id": "430-mark-of-nature",
@@ -4573,7 +4619,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["318-defender"]
         },
         {
             "id": "58-nourish",
@@ -4630,7 +4677,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["204-leader-of-the-pack", "219-summon-a-panther", "190-panther"]
         },
         {
             "id": "170-power-overwhelming",
@@ -4768,7 +4816,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["230-worthless-imp"]
         },
         {
             "id": "550-shadowstep",
@@ -4836,7 +4885,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["21-squire"]
         },
         {
             "id": "634-silvermoon-guardian",
@@ -4920,7 +4970,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["272-treant"]
         },
         {
             "id": "103-southsea-deckhand",
@@ -5195,7 +5246,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["290-hound"]
         },
         {
             "id": "262-uproot",
@@ -5328,7 +5380,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["234-wrath", "501-wrath"]
         },
         {
             "id": "234-wrath",
@@ -5424,7 +5477,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["369-huffer", "32-leokk", "593-misha"]
         },
         {
             "id": "12181-annoy-o-tron",
@@ -5453,7 +5507,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "2",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12328-attack-mode", "12330-tank-mode"]
         },
         {
             "id": "12227-antique-healbot",
@@ -5683,7 +5738,8 @@ angular
             "mana": "1",
             "attack": "2",
             "health": "1",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12366-armor-plating", "12372-emergency-coolant", "12370-finicky-cloakfield", "12373-reversing-switch", "12369-rusty-horn", "12368-time-rewinder", "12375-whirling-blades"]
         },
         {
             "id": "12304-cobra-shot",
@@ -5859,7 +5915,8 @@ angular
             "mana": "4",
             "attack": "2",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["680-mechanical-dragonling"]
         },
         {
             "id": "36-dread-infernal",
@@ -5888,7 +5945,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12353-druid-of-the-fang"]
         },
         {
             "id": "599-dual-warglaives",
@@ -6538,7 +6596,8 @@ angular
             "mana": "4",
             "attack": "4",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12366-armor-plating", "12372-emergency-coolant", "12370-finicky-cloakfield", "12373-reversing-switch", "12369-rusty-horn", "12368-time-rewinder", "12375-whirling-blades"]
         },
         {
             "id": "12188-mechwarper",
@@ -6608,7 +6667,8 @@ angular
             "mana": "1",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["650-mirror-image"]
         },
         {
             "id": "650-mirror-image",
@@ -6709,7 +6769,8 @@ angular
             "mana": "2",
             "attack": "2",
             "health": "1",
-            "draftable": true
+            "draftable": true,
+            "summons": ["486-murloc-scout"]
         },
         {
             "id": "16-naga-myrmidon",
@@ -6806,6 +6867,7 @@ angular
             "draftable": true
         },
         {
+            # FIXME Search is currently broken for this card because of "hunter"
             "id": "47-razorfen-hunter",
             "name": "Razorfen Hunter",
             "type": "Minion",
@@ -6816,7 +6878,8 @@ angular
             "mana": "3",
             "attack": "2",
             "health": "3",
-            "draftable": true
+            "draftable": true,
+            "summons": ["65-boar"]
         },
         {
             "id": "678-riverpaw-gnoll",
@@ -7228,7 +7291,8 @@ angular
             "mana": "3",
             "attack": "3",
             "health": "3",
-            "draftable": true
+            "draftable": true,
+            "summons": ["12366-armor-plating", "12372-emergency-coolant", "12370-finicky-cloakfield", "12373-reversing-switch", "12369-rusty-horn", "12368-time-rewinder", "12375-whirling-blades"]
         },
         {
             "id": "367-totemic-might",
@@ -7786,7 +7850,8 @@ angular
             "mana": "3",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["115-frog"]
         },
         {
             "id": "108-holy-light",
@@ -7989,7 +8054,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["218-sheep"]
         },
         {
             "id": "431-power-word-shield",
@@ -8298,7 +8364,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["520-excess-mana"]
         },
         {
             "id": "146-windfury",
@@ -8853,6 +8920,7 @@ angular
             "isToken": true
         },
         {
+            # FIXME This doesn't show related cards right now because "feugen" returns 2 results
             "id": "7745-feugen",
             "name": "Feugen",
             "type": "Minion",
@@ -8863,7 +8931,8 @@ angular
             "mana": "5",
             "attack": "4",
             "health": "7",
-            "draftable": true
+            "draftable": true,
+            "summons": ["7759-thaddius"]
         },
         {
             "id": "7800-feugen",
@@ -9003,7 +9072,8 @@ angular
             "mana": "6",
             "attack": "6",
             "health": "6",
-            "draftable": true
+            "draftable": true,
+            "summons": ["240-emboldener-3000", "423-homing-chicken", "405-poultryizer", "439-repair-bot"]
         },
         {
             "id": "12333-gift-of-cards",
@@ -9220,7 +9290,8 @@ angular
             "mana": "2",
             "attack": "1",
             "health": "2",
-            "draftable": true
+            "draftable": true,
+            "summons": ["7760-spectral-spider"]
         },
         {
             "id": "7844-heigan-the-unclean",
@@ -9930,7 +10001,8 @@ angular
             "mana": "2",
             "attack": "0",
             "health": "2",
-            "draftable": true
+            "draftable": true,
+            "summons": ["7739-nerubian"]
         },
         {
             "id": "687-noooooooooooo",
@@ -10040,7 +10112,8 @@ angular
             "mana": "4",
             "attack": "0",
             "health": "0",
-            "draftable": true
+            "draftable": true,
+            "summons": ["272-treant"]
         },
         {
             "id": "7796-polarity-shift",
@@ -10067,7 +10140,8 @@ angular
             "attack": "0",
             "health": "3",
             "draftable": false,
-            "isToken": true
+            "isToken": true,
+            "summons": ["12355-chicken"]
         },
         {
             "id": "717-power-of-the-horde",
@@ -10438,7 +10512,8 @@ angular
             "mana": "5",
             "attack": "3",
             "health": "5",
-            "draftable": true
+            "draftable": true,
+            "summons": ["7764-slime"]
         },
         {
             "id": "7751-spectral-knight",
@@ -10541,7 +10616,8 @@ angular
             "mana": "5",
             "attack": "7",
             "health": "4",
-            "draftable": true
+            "draftable": true,
+            "summons": ["7759-thaddius"]
         },
         {
             "id": "7801-stalagg",

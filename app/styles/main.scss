@@ -73,6 +73,7 @@ body {
   margin: 30px 0;
 }
 
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -91,6 +92,11 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+  margin-top: 69.5px;
 }
 
 #search {

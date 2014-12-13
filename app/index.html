@@ -56,16 +56,31 @@
         </div>
       </div>
 
-      <div class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-repeat="card in shown track by card.id">
-          <img ng-src="images/{{card.img}}" class="img-responsive center-block">
+      <div ng-switch="filtered.length" ng-cloak>
+        <div ng-switch-when="0" class="notfound text-center">
+          <h1>try another search</h1>
+          <img src="images/error-bg.png" class="img-responsive center-block">
+        </div>
+
+        <div ng-switch-when="1" class="row" id="cards">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-click="show(filtered[0])">
+            <img ng-src="images/{{filtered[0].img}}" class="img-responsive center-block">
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="related(filtered[0]).length > 0">
+            <img ng-src="images/arrow.png" class="img-responsive center-block rotate-90">
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="card in related(filtered[0])">
+            <img ng-src="images/{{card.img}}" class="img-responsive center-block">
+          </div>
+        </div>
+
+        <div ng-switch-default class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-click="show(card)" ng-repeat="card in shown track by card.id">
+            <img ng-src="images/{{card.img}}" class="img-responsive center-block">
+          </div>
         </div>
       </div>
 
-      <div class="notfound text-center" ng-cloak ng-show="shown.length == 0">
-        <h1>try another search</h1>
-        <img src="images/error-bg.png" class="img-responsive center-block">
-      </div>
 
       <div class="footer text-center">
         <p>

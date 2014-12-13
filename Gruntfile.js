@@ -357,7 +357,6 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'cards.json',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'images/{,*/}*.{png,jpg,jpeg,gif}', // Since we're not optimizing images anymore, copy them directly
@@ -442,8 +441,9 @@ module.exports = function (grunt) {
           }
         },
         files: [
-          {expand: true, cwd: 'dist/', src: ['**', '!index.html', '!cards.json'], dest: ''},
-          {expand: true, cwd: 'dist/', src: ['index.html', 'cards.json'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}}
+          {expand: true, cwd: 'dist/', src: ['**', '!index.html', '!images/*'], dest: ''},
+          {expand: true, cwd: 'dist/', src: ['index.html'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}},
+          {expand: true, cwd: 'dist/', src: ['images/*'], dest: '', params: {CacheControl: 'public,max-age=2592000'}}
         ]
       }
     }

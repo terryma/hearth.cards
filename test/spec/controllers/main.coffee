@@ -32,9 +32,10 @@ describe 'Controller: MainCtrl', ->
   MURLOC = 11 # Race
   PIRATE = 8 # Race
   TOTEM = 3 # Race
+  SUMMONS = 72 # Cards that summons a token of some sort
   # Helper method to verify search results
   search = (query, count) ->
-    scope.search(query)
+    scope.update(query)
     expect(scope.filtered.length).toBe count
 
   # Initialize the controller and a mock scope
@@ -43,9 +44,6 @@ describe 'Controller: MainCtrl', ->
     MainCtrl = $controller 'MainCtrl', {
       $scope: scope
     }
-
-  it 'search should work for initial load', ->
-    expect(scope.filtered.length).toBe DRAFTABLE
 
   it 'search should work for empty query', ->
     search '', DRAFTABLE
@@ -111,6 +109,9 @@ describe 'Controller: MainCtrl', ->
     # FIXME Note that this should actually return 10, but since 'spell' takes precedence in the current implementation,
     # it doesn't work.
     search 'spell damage +1', 1
+
+  it 'search should work for "summons"', ->
+    search 'summons', SUMMONS
 
   it 'search should work for not found', ->
     search 'batman', 0
