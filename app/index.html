@@ -88,11 +88,11 @@
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-click="show(card)">
             <img ng-src="images/{{filtered[0].img}}" class="img-responsive center-block">
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="related(card).length > 0">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="relatedCards.length > 0">
             <!-- <img ng-src="images/arrow-blue.png" class="img-responsive center-block rotate-90"> -->
             <img ng-src="images/arrow-blue.png" class="img-responsive center-block">
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="related in related(card)">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="related in relatedCards">
             <img ng-src="images/{{related.img}}" class="img-responsive center-block">
           </div>
         </div>
