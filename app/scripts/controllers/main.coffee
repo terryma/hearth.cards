@@ -59,21 +59,31 @@ angular.module('hearthCardsApp')
       # Handle some words that don't impact search results
       if /^with$/.test token
         return
+
+      # Attack/health filter
       else if /^(0|[1-9]\d*)\/(0|[1-9]\d*)$/.test token
         # 2/3 for 2 attack 3 health
         pair = token.split('/')
         filters.attack.push pair[0]
         filters.health.push pair[1]
+
+      # Class filter
       else if /^druid$|^hunter$|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
         filters.class.push token
+
+      # Type filters
       else if /^minion[s]?$/i.test token
         filters.type.push 'Minion'
       else if /^weapon[s]?$/i.test token
         filters.type.push 'Weapon'
       else if /^spell[s]?$|^ability$|^abilities$/i.test token
         filters.type.push 'Ability'
+
+      # Rarity filter
       else if /^legendary$|^epic$|^rare$|^common$|^free$/i.test token
         filters.rarity.push token
+
+      # Race filters
       else if /^beast[s]?$/i.test token
         filters.race.push 'Beast'
       else if /^demon[s]?$/i.test token
@@ -88,14 +98,22 @@ angular.module('hearthCardsApp')
         filters.race.push 'Pirate'
       else if /^totem[s]?$/i.test token
         filters.race.push 'Totem'
+
+      # Set filters
       else if /^basic$/i.test token
         filters.set.push 'Basic'
+      else if /^promo$/i.test token
+        filters.set.push 'Promo'
+      else if /^reward$/i.test token
+        filters.set.push 'Reward'
       else if /^expert|classic$/i.test token
         filters.set.push 'Expert'
       else if /^gvg$/i.test token
         filters.set.push 'Goblins vs Gnomes'
       else if /^naxx$/i.test token
         filters.set.push 'Curse of Naxxramas'
+
+      # Special cases
       else if /^secrets$/i.test token
         # special logic for "secrets", since it's in the card text and not a
         # category
