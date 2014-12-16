@@ -22,6 +22,8 @@ describe 'Controller: MainCtrl', ->
   CLASSIC = 245 # Set
   NAXX = 30 # Set
   GVG = 123 # Set
+  PROMO = 2 # Set
+  REWARD = 2 # Set
   MINION = 339 # Type
   WEAPON = 18 # Type
   ABILITY = 178 # Type
@@ -69,6 +71,8 @@ describe 'Controller: MainCtrl', ->
     search 'expert', CLASSIC
     search 'naxx', NAXX
     search 'gvg', GVG
+    search 'promo', PROMO
+    search 'reward', REWARD
 
   # Type
   it 'search should work for types', ->
