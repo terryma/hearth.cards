@@ -227,9 +227,16 @@ angular.module('hearthCardsApp')
               return false
           return true
         )
+
         # Special logic for card name in quotes. "Feugen" returns only 1 card, triggered when the card is clicked
         if tokens.length == 1 and tokens[0].quoted
-          nameMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase() and card.draftable
-          $scope.filtered = nameMatch if nameMatch.length == 1
+          exactMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase()
+          draftMatch = _.filter exactMatch, (card) -> card.draftable
+          tokenMatch = _.filter exactMatch, (card) -> card.isToken
+
+          if draftMatch.length == 1
+            $scope.filtered = draftMatch
+          else if tokenMatch.length == 1
+            $scope.filtered = tokenMatch
 
         $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
