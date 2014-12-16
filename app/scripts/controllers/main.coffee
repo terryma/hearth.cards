@@ -50,7 +50,7 @@ angular.module('hearthCardsApp')
 
     # Shows detailed card info and related cards. Called when card is clicked or the only search result
     $scope.show = (card) ->
-      $scope.query = card.name
+      $scope.query = "\"#{card.name}\""
       $scope.createNewHistoryRecord = true
       $scope.search($scope.query)
 
@@ -64,7 +64,7 @@ angular.module('hearthCardsApp')
         pair = token.split('/')
         filters.attack.push pair[0]
         filters.health.push pair[1]
-      else if /^druid$|^hunter|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
+      else if /^druid$|^hunter$|^mage$|^paladin$|^priest$|^rogue$|^shaman$|^warlock$|^warrior$|^neutral$/i.test token
         filters.class.push token
       else if /^minion[s]?$/i.test token
         filters.type.push 'Minion'
@@ -150,32 +150,37 @@ angular.module('hearthCardsApp')
         summons: []
         text: [] # This filters based on card name and card text
 
-      tokens = query.split /\s+/
+      regex = /[^\s"]+|"([^"]+)"/gi
+      tokens = []
+      while (match = regex.exec(query))?
+        tokens.push if match[1]? then {value: match[1], quoted: true} else {value: match[0], quoted:false}
+      # console.log "tokens = ", tokens
       cost = -1
       for token in tokens
+        tokenValue = token.value
         # Any number by itself is interpreted to be either mana, attack, or
         # health. This separates us from cases such as "+2 attack"
-        if /^(0|[1-9]\d*)$/.test(token)
-          # Save the cost and move to next token
-          cost = parseInt(token)
+        if /^(0|[1-9]\d*)$/.test(tokenValue)
+          # Save the cost and move to next tokenValue
+          cost = parseInt(tokenValue)
         else
-          # If we have a cost previously and the current token is  mana, attack,
+          # If we have a cost previously and the current tokenValue is  mana, attack,
           # or health
           if cost >= 0
-            if /^mana$/i.test(token)
+            if /^mana$/i.test(tokenValue)
               filters.mana.push "#{cost}"
-            else if /^attack[s]?$/i.test(token)
+            else if /^attack[s]?$/i.test(tokenValue)
               filters.attack.push "#{cost}"
-            else if /^health|durability$/i.test(token)
+            else if /^health|durability$/i.test(tokenValue)
               filters.health.push "#{cost}"
             else
               # Cost didn't match with anything, "2 bananas" for example
               filters.text.push "#{cost}"
-              $scope.parseToken(token, filters)
+              $scope.parseToken(tokenValue, filters)
             cost = -1 # Reset the cost
           else
             # We don't have a cost previously
-            $scope.parseToken(token, filters)
+            $scope.parseToken(tokenValue, filters)
 
       # console.log ("#{type}: #{value}" for type, value of filters when value.length > 0)
 
@@ -193,24 +198,29 @@ angular.module('hearthCardsApp')
         $scope.filtered = []
         $scope.shown = []
       else
-        $scope.filtered = $filter('filter')($scope.draftable, (value, index) ->
+        $scope.filtered = $filter('filter')($scope.draftable, (card, index) ->
+
           for category, input of expression
             # Special logic for 'neutral'
             if category == 'class' and input.toUpperCase() == 'NEUTRAL'
-              return false if value[category]?
+              return false if card[category]?
             else
-              return false if !value[category]? or input.toUpperCase() != value[category].toUpperCase()
+              return false if !card[category]? or input.toUpperCase() != card[category].toUpperCase()
 
           # Take care of the 'summons' keyword
           if filters.summons.length > 0
-            return false if !value['summons']?
+            return false if !card.summons?
 
           # Filter based on card name and card text
           for text in filters.text
             regex = new RegExp(text.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"), "i")
-            if !regex.test(value.name) and !regex.test(value.text)
+            if !regex.test(card.name) and !regex.test(card.text)
               return false
           return true
-
         )
+        # Special logic for card name in quotes. "Feugen" returns only 1 card, triggered when the card is clicked
+        if tokens.length == 1 and tokens[0].quoted
+          nameMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase()
+          $scope.filtered = nameMatch if nameMatch.length == 1
+
         $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]

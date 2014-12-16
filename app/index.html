@@ -62,15 +62,38 @@
           <img src="images/error-bg.png" class="img-responsive center-block">
         </div>
 
-        <div ng-switch-when="1" class="row" id="cards">
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-click="show(filtered[0])">
+        <div ng-switch-when="1" class="row" id="cards" ng-init="card = filtered[0]">
+          <!-- <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6"> -->
+            <!-- <dl class="dl-horizontal"> -->
+              <!-- <dt>Class</dt> -->
+              <!-- <dd>{{card.class == nil ? "Neutral" : card.class}}</dd> -->
+              <!-- <dt>Mana</dt> -->
+              <!-- <dd>{{card.mana}}</dd> -->
+              <!-- <dt>Attack</dt> -->
+              <!-- <dd>{{card.attack}}</dd> -->
+              <!-- <dt>Health</dt> -->
+              <!-- <dd>{{card.health}}</dd> -->
+              <!-- <dt>Type</dt> -->
+              <!-- <dd>{{card.type}}</dd> -->
+              <!-- <dt>Race</dt> -->
+              <!-- <dd>{{card.race}}</dd> -->
+              <!-- <dt>Set</dt> -->
+              <!-- <dd>{{card.set}}</dd> -->
+              <!-- <dt>Rarity</dt> -->
+              <!-- <dd>{{card.rarity}}</dd> -->
+              <!-- <dt>Text</dt> -->
+              <!-- <dd>{{card.text}}</dd> -->
+            <!-- </dl> -->
+          <!-- </div> -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-shadow" ng-click="show(card)">
             <img ng-src="images/{{filtered[0].img}}" class="img-responsive center-block">
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="related(filtered[0]).length > 0">
-            <img ng-src="images/arrow.png" class="img-responsive center-block rotate-90">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="related(card).length > 0">
+            <!-- <img ng-src="images/arrow-blue.png" class="img-responsive center-block rotate-90"> -->
+            <img ng-src="images/arrow-blue.png" class="img-responsive center-block">
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="card in related(filtered[0])">
-            <img ng-src="images/{{card.img}}" class="img-responsive center-block">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="related in related(card)">
+            <img ng-src="images/{{related.img}}" class="img-responsive center-block">
           </div>
         </div>
 

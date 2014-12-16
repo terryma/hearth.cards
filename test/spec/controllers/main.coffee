@@ -115,3 +115,13 @@ describe 'Controller: MainCtrl', ->
 
   it 'search should work for not found', ->
     search 'batman', 0
+
+  it 'search should work for quoted name', ->
+    search '"Wisp"', 1
+    search '"Feugen"', 1
+    search '"Stalagg"', 1
+
+  it 'search should work for unquoted name', ->
+    search 'Wisp', 2 # Wisp and Dark Wispers
+    search 'Feugen', 2 # Feugen and Stalagg
+    search 'Stalagg', 2 # Feugen and Stalagg
