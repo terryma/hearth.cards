@@ -10,29 +10,110 @@ describe 'Controller: MainCtrl', ->
   MainCtrl = {}
   scope = {}
   # Some constants
+  TOTAL = 720
   DRAFTABLE = 535
-  PER_CLASS = 34 # Cards per class
-  NEUTRAL = 229 # 'Classless' cards
-  LEGENDARY = 62 # Rarity
-  EPIC = 66 # Rarity
-  RARE = 122 # Rarity
-  COMMON = 226 # Rarity
-  FREE = 59 # Rarity
-  BASIC = 133 # Set
-  CLASSIC = 245 # Set
-  NAXX = 30 # Set
-  GVG = 123 # Set
-  MINION = 339 # Type
-  WEAPON = 18 # Type
-  ABILITY = 178 # Type
-  BEAST = 32 # Race
-  DEMON = 15 # Race
-  DRAGON = 9 # Race
-  MECH = 46 # Race
-  MURLOC = 11 # Race
+  TOKEN = 185
+
+  DRUID = 69 # Class
+  HUNTER = 40 # Class
+  MAGE = 36 # Class
+  PALADIN = 37 # Class
+  PRIEST = 35 # Class
+  ROGUE = 36 # Class
+  SHAMAN = 39 # Class
+  WARLOCK = 38 # Class
+  WARRIOR = 37 # Class
+  NEUTRAL = 348 # 'Classless'
+
+  LEGENDARY = 70 # Rarity
+  EPIC = 68 # Rarity
+  RARE = 126 # Rarity
+  COMMON = 277 # Rarity
+  FREE = 66 # Rarity
+
+  BASIC = 153 # Set
+  CLASSIC = 303 # Set
+  NAXX = 85 # Set
+  GVG = 143 # Set
+
+  MINION = 444 # Type
+  WEAPON = 33 # Type
+  ABILITY = 243 # Type
+
+  BEAST = 50 # Race
+  DEMON = 19 # Race
+  DRAGON = 12 # Race
+  MECH = 54 # Race
+  MURLOC = 13 # Race
   PIRATE = 8 # Race
-  TOTEM = 3 # Race
-  SUMMONS = 72 # Cards that summons a token of some sort
+  TOTEM = 7 # Race
+
+  SUMMONS = 73 # Cards that summon a token of some sort
+
+  DRAFTABLE_PER_CLASS = 34 # Cards per class
+  DRAFTABLE_NEUTRAL = 229 # 'Classless' cards
+
+  DRAFTABLE_LEGENDARY = 62 # Rarity
+  DRAFTABLE_EPIC = 66 # Rarity
+  DRAFTABLE_RARE = 122 # Rarity
+  DRAFTABLE_COMMON = 226 # Rarity
+  DRAFTABLE_FREE = 59 # Rarity
+
+  DRAFTABLE_BASIC = 133 # Set
+  DRAFTABLE_CLASSIC = 245 # Set
+  DRAFTABLE_NAXX = 30 # Set
+  DRAFTABLE_GVG = 123 # Set
+
+  DRAFTABLE_MINION = 339 # Type
+  DRAFTABLE_WEAPON = 18 # Type
+  DRAFTABLE_ABILITY = 178 # Type
+
+  DRAFTABLE_BEAST = 32 # Race
+  DRAFTABLE_DEMON = 15 # Race
+  DRAFTABLE_DRAGON = 9 # Race
+  DRAFTABLE_MECH = 46 # Race
+  DRAFTABLE_MURLOC = 11 # Race
+  DRAFTABLE_PIRATE = 8 # Race
+  DRAFTABLE_TOTEM = 3 # Race
+
+  DRAFTABLE_SUMMONS = 72 # Cards that summon a token of some sort
+
+  TOKEN_DRUID = 35 # Class
+  TOKEN_HUNTER = 6 # Class
+  TOKEN_MAGE = 2 # Class
+  TOKEN_PALADIN = 3 # Class
+  TOKEN_PRIEST = 1 # Class
+  TOKEN_ROGUE = 2 # Class
+  TOKEN_SHAMAN = 5 # Class
+  TOKEN_WARLOCK = 4 # Class
+  TOKEN_WARRIOR = 3 # Class
+  TOKEN_NEUTRAL = 119 # 'Classless'
+
+  TOKEN_LEGENDARY = 8 # Rarity
+  TOKEN_EPIC = 2 # Rarity
+  TOKEN_RARE = 4 # Rarity
+  TOKEN_COMMON = 51 # Rarity
+  TOKEN_FREE = 7 # Rarity
+
+  TOKEN_BASIC = 20 # Set
+  TOKEN_CLASSIC = 58 # Set
+  TOKEN_NAXX = 55 # Set
+  TOKEN_GVG = 20 # Set
+
+  TOKEN_MINION = 105 # Type
+  TOKEN_WEAPON = 15 # Type
+  TOKEN_ABILITY = 65 # Type
+
+  TOKEN_BEAST = 18 # Race
+  TOKEN_DEMON = 4 # Race
+  TOKEN_DRAGON = 3 # Race
+  TOKEN_MECH =  8 # Race
+  TOKEN_MURLOC = 2 # Race
+  TOKEN_PIRATE = 0 # Race
+  TOKEN_TOTEM = 4 # Race
+
+  TOKEN_SUMMONS = 1 # Cards that summon a token of some sort
+
   # Helper method to verify search results
   search = (query, count) ->
     scope.update(query)
@@ -46,12 +127,23 @@ describe 'Controller: MainCtrl', ->
     }
 
   it 'search should work for empty query', ->
-    search '', DRAFTABLE
+    search '', TOTAL
+
+  it 'search should work for draftable/token', ->
+    search 'draftable', DRAFTABLE
+    search 'token', TOKEN
 
   # Class
   it 'search should work for classes', ->
-    for clazz in ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
-      search clazz, PER_CLASS
+    search 'druid', DRUID
+    search 'hunter', HUNTER
+    search 'mage', MAGE
+    search 'paladin', PALADIN
+    search 'priest', PRIEST
+    search 'rogue', ROGUE
+    search 'shaman', SHAMAN
+    search 'warlock', WARLOCK
+    search 'warrior', WARRIOR
     search 'neutral', NEUTRAL
 
   # Rarity
@@ -99,7 +191,7 @@ describe 'Controller: MainCtrl', ->
     search 'totems', TOTEM
 
   it 'search should work for some common queries', ->
-    search 'legendary mech', 7
+    search 'legendary mech', 8
     search '2 mana mage spell', 4
     search '2/3 gvg minion with freeze', 1
     search '6/2 charge', 1
@@ -122,6 +214,6 @@ describe 'Controller: MainCtrl', ->
     search '"Stalagg"', 1
 
   it 'search should work for unquoted name', ->
-    search 'Wisp', 2 # Wisp and Dark Wispers
-    search 'Feugen', 2 # Feugen and Stalagg
-    search 'Stalagg', 2 # Feugen and Stalagg
+    search 'Wisp', 4 # Wisp and Dark Wispers
+    search 'Feugen', 3 # Feugen and Stalagg
+    search 'Stalagg', 3 # Feugen and Stalagg
