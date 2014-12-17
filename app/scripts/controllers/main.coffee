@@ -29,8 +29,8 @@ angular.module('hearthCardsApp')
       # map
     # , {}
 
-    # All the draftable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
-    $scope.draftable = _.sortBy (card for card in cards when card.draftable), (card) -> parseInt(card.mana)
+    # All the searchable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
+    $scope.searchable = _.sortBy (card for card in cards when card.type not in ["Hero Power", "Hero"] and card.set != 'Missions'), (card) -> parseInt(card.mana)
 
     # The entire set of cards matching the search.
     $scope.filtered = []
@@ -45,7 +45,7 @@ angular.module('hearthCardsApp')
 
     # Generate the css class for the percentage circle used to indicate the number of filtered results
     $scope.percentCircleCssClass = ->
-      percent = Math.round($scope.filtered.length / $scope.draftable.length * 100)
+      percent = Math.round($scope.filtered.length / $scope.searchable.length * 100)
       "c100 p#{percent} small center"
 
     # Shows detailed card info and related cards. Called when card is clicked or the only search result
@@ -100,6 +100,10 @@ angular.module('hearthCardsApp')
         filters.race.push 'Totem'
 
       # Set filters
+      else if /^token[s]?$/i.test token
+        filters.token.push 'Token'
+      else if /^draftable[s]?$/i.test token
+        filters.token.push 'Draftable'
       else if /^basic$/i.test token
         filters.set.push 'Basic'
       else if /^promo$/i.test token
@@ -166,6 +170,7 @@ angular.module('hearthCardsApp')
         set: []
         race: []
         summons: []
+        token: []
         text: [] # This filters based on card name and card text
 
       regex = /[^\s"]+|"([^"]+)"/gi
@@ -204,7 +209,7 @@ angular.module('hearthCardsApp')
 
       empty = false
       expression = {}
-      for category in ['mana', 'attack', 'health', 'class', 'type', 'rarity', 'set', 'race']
+      for category in ['mana', 'attack', 'health', 'class', 'type', 'rarity', 'set', 'race', 'token']
         # Can't have more than one value for each category here
         if filters[category].length > 1
           empty = true
@@ -216,12 +221,16 @@ angular.module('hearthCardsApp')
         $scope.filtered = []
         $scope.shown = []
       else
-        $scope.filtered = $filter('filter')($scope.draftable, (card, index) ->
+        $scope.filtered = $filter('filter')($scope.searchable, (card, index) ->
 
           for category, input of expression
             # Special logic for 'neutral'
             if category == 'class' and input.toUpperCase() == 'NEUTRAL'
               return false if card[category]?
+            else if category == 'token' and input == 'Token'
+              return false if !card['isToken']?
+            else if category == 'token' and input == 'Draftable'
+              return false if card['draftable'] == false
             else
               return false if !card[category]? or input.toUpperCase() != card[category].toUpperCase()
 
@@ -236,10 +245,17 @@ angular.module('hearthCardsApp')
               return false
           return true
         )
+
         # Special logic for card name in quotes. "Feugen" returns only 1 card, triggered when the card is clicked
         if tokens.length == 1 and tokens[0].quoted
-          nameMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase()
-          $scope.filtered = nameMatch if nameMatch.length == 1
+          exactMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase()
+          draftMatch = _.filter exactMatch, (card) -> card.draftable
+          tokenMatch = _.filter exactMatch, (card) -> card.isToken
+
+          if draftMatch.length == 1
+            $scope.filtered = draftMatch
+          else if tokenMatch.length == 1
+            $scope.filtered = tokenMatch
 
         if $scope.filtered.length == 1
           $scope.relatedCards = $scope.related $scope.filtered[0]
