@@ -23,7 +23,7 @@ describe 'Controller: MainCtrl', ->
   CLASSIC = 245 # Set
   NAXX = 30 # Set
   GVG = 123 # Set
-  PROMO = 2 # Set
+  PROMO = 11 # Set
   REWARD = 2 # Set
   MINION = 339 # Type
   WEAPON = 18 # Type

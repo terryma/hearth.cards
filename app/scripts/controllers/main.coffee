@@ -30,7 +30,7 @@ angular.module('hearthCardsApp')
     # , {}
 
     # All the searchable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
-    $scope.searchable = _.sortBy (card for card in cards when card.type not in ["Hero Power", "Hero"]), (card) -> parseInt(card.mana)
+    $scope.searchable = _.sortBy (card for card in cards when card.type not in ["Hero Power", "Hero"] and card.set != 'Missions'), (card) -> parseInt(card.mana)
 
     # The entire set of cards matching the search.
     $scope.filtered = []
