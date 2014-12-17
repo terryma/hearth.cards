@@ -223,4 +223,6 @@ angular.module('hearthCardsApp')
           nameMatch = _.filter $scope.filtered, (card) -> card.name.toUpperCase() == tokens[0].value.toUpperCase()
           $scope.filtered = nameMatch if nameMatch.length == 1
 
+        if $scope.filtered.length == 1
+          $scope.relatedCards = $scope.related $scope.filtered[0]
         $scope.shown = $scope.filtered[0..$scope.cardsPerLoad-1]
