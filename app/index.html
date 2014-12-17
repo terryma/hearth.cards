@@ -89,7 +89,7 @@
             <div class="card center-block">
               <img ng-src="images/{{card.img}}" class="img-responsive center-block">
               <img ng-src="images/token.png" ng-if="card.isToken" class="token img-responsive" >
-              <img ng-src="images/{{card.class == nil ? 'neutral' : card.class}}.png" ng-if="!card.isToken" class="token img-responsive">
+              <img ng-src="images/{{card.class == nil ? 'neutral' : card.class.toLowerCase()}}.png" ng-if="!card.isToken" class="token img-responsive">
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="relatedCards.length > 0">
@@ -99,7 +99,7 @@
             <div class="card center-block">
               <img ng-src="images/{{related.img}}" class="img-responsive center-block">
               <img ng-src="images/token.png" ng-if="related.isToken" class="token img-responsive" >
-              <img ng-src="images/{{related.class == nil ? 'neutral' : related.class}}.png" ng-if="!related.isToken" class="token img-responsive">
+              <img ng-src="images/{{related.class == nil ? 'neutral' : related.class.toLowerCase()}}.png" ng-if="!related.isToken" class="token img-responsive">
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@
             <div class="card center-block">
               <img ng-src="images/{{card.img}}" class="img-responsive center-block">
               <img ng-src="images/token.png" ng-if="card.isToken" class="token img-responsive" >
-              <img ng-src="images/{{card.class == nil ? 'neutral' : card.class}}.png" ng-if="!card.isToken" class="token img-responsive">
+              <img ng-src="images/{{card.class == nil ? 'neutral' : card.class.toLowerCase()}}.png" ng-if="!card.isToken" class="token img-responsive">
             </div>
           </div>
         </div>
