@@ -13,11 +13,12 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
 
 
   $templateCache.put('views/main.html',
+    "<!-- Included from ng-include. This creates a child scope --!>\n" +
     "<div class=\"row\" id=\"search\">\n" +
     "  <div class=\"col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1\n" +
     "    col-sm-10 col-xs-offset-1 col-xs-10\" >\n" +
     "    <div id=\"custom-search-input\" class=\"input-group input-group-lg\">\n" +
-    "      <input ng-model=\"query\" ng-change=\"search(query)\"\n" +
+    "      <input ng-model=\"$parent.query\" ng-change=\"search(query)\"\n" +
     "      ng-model-options=\"{debounce:200}\" type=\"search\" class=\"search-query\n" +
     "      form-control\" placeholder=\"try 'legendary mech', '2 mana mage spell', or '2/3 gvg minion with freeze'\" autofocus>\n" +
     "      <span class=\"input-group-btn\">\n" +
