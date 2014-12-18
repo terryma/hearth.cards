@@ -454,6 +454,18 @@ module.exports = function (grunt) {
           {expand: true, cwd: 'dist/', src: ['images/*'], dest: '', params: {CacheControl: 'public,max-age=2592000'}}
         ]
       }
+    },
+    ngtemplates: {
+      app: {
+        cwd: '<%= yeoman.app %>',
+        src: 'views/{,*/}*.html',
+        dest: 'templates.js',
+        options: {
+          htmlmin:  '<%= htmlmin.app %>',
+          usemin: 'scripts/scripts.js',
+          module: 'hearthCardsApp'
+        }
+      }
     }
 
   });
@@ -501,6 +513,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
+    'ngtemplates',
     'concurrent:dist',
     'autoprefixer',
     'concat',
