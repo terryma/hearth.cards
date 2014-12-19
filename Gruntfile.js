@@ -449,9 +449,10 @@ module.exports = function (grunt) {
           }
         },
         files: [
-          {expand: true, cwd: 'dist/', src: ['**', '!index.html', '!images/*'], dest: ''},
-          {expand: true, cwd: 'dist/', src: ['index.html'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}},
-          {expand: true, cwd: 'dist/', src: ['images/*'], dest: '', params: {CacheControl: 'public,max-age=2592000'}}
+          {action: 'upload', expand: true, cwd: 'dist/', src: ['**', '!index.html', '!images/*'], dest: ''},
+          {action: 'upload', expand: true, cwd: 'dist/', src: ['index.html'], dest: '', params: {CacheControl: 'public,must-revalidate,proxy-revalidate,max-age=0'}},
+          {action: 'upload', expand: true, cwd: 'dist/', src: ['images/*'], dest: '', params: {CacheControl: 'public,max-age=2592000'}},
+          {action: 'delete', cwd: 'dist/', dest:'/'}
         ]
       }
     },
