@@ -42,7 +42,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -50,9 +49,6 @@ body {
 
 /* Custom page header */
 .header {
-  /* border-bottom: 1px solid #e5e5e5; */
-  /* background: transparent url("/images/logo.png") center top no-repeat; */
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -67,36 +63,6 @@ body {
   padding-top: 19px;
   color: #777;
   /* border-top: 1px solid #e5e5e5; */
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-.rotate-90 {
-  transform: rotate(90deg);
-  margin-top: 69.5px;
 }
 
 #search {
@@ -146,34 +112,14 @@ body {
   }
   img.token {
     position: absolute;
-    top: 9%;
-    right: 5%;
+    top: 5%;
+    right: 3%;
     width: 20%;
   }
 }
 
-/* .card-container.ng-enter, .card-container.ng-leave { */
-  /* transition: 1s linear all; */
-/* } */
-/* .card-container.ng-enter { */
-  /* opacity: 0; */
-/* } */
-/* .card-container.ng-enter.ng-enter-active { */
-  /* opacity: 1; */
-/* } */
-/* .card-container.ng-leave { */
-  /* opacity: 1; */
-/* } */
-/* .card-container.ng-leave.ng-leave-active { */
-  /* opacity: 0; */
-/* } */
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* .container { */
-    /* max-width: 730px; */
-  /* } */
-
   #cards {
     padding-left: 30px;
     padding-right: 30px;
@@ -181,7 +127,6 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -192,9 +137,5 @@ body {
   }
   .footer {
     margin-top: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }

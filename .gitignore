@@ -5,3 +5,4 @@ dist
 .sass-cache
 bower_components
 aws-keys.json
+tools/images
