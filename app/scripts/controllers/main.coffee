@@ -102,7 +102,7 @@ angular.module('hearthCardsApp')
       # Set filters
       else if /^token[s]?$/i.test token
         filters.token.push 'Token'
-      else if /^draftable[s]?$/i.test token
+      else if /^draftable[s]?$|^collectable[s]?$/i.test token
         filters.token.push 'Draftable'
       else if /^basic$/i.test token
         filters.set.push 'Basic'
@@ -116,6 +116,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'Goblins vs Gnomes'
       else if /^naxx$/i.test token
         filters.set.push 'Curse of Naxxramas'
+      else if /^brm$|^blackrock$/i.test token
+        filters.set.push 'Blackrock Mountain'
 
       # Special cases
       else if /^secrets$/i.test token
@@ -231,7 +233,7 @@ angular.module('hearthCardsApp')
             else if category == 'token' and input == 'Token'
               return false if !card['isToken']?
             else if category == 'token' and input == 'Draftable'
-              return false if card['draftable'] == false
+              return false if !card['draftable']? || !card['draftable']
             else
               return false if !card[category]? or input.toUpperCase() != card[category].toUpperCase()
 

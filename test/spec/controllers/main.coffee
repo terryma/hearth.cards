@@ -10,8 +10,8 @@ describe 'Controller: MainCtrl', ->
   MainCtrl = {}
   scope = {}
   # Some constants
-  TOTAL = 720
-  DRAFTABLE = 535
+  TOTAL = 826
+  DRAFTABLE = 566
   PER_CLASS = 34 # Cards per class
   NEUTRAL = 229 # 'Classless' cards
   LEGENDARY = 62 # Rarity
@@ -33,23 +33,23 @@ describe 'Controller: MainCtrl', ->
   DRAGON = 9 # Race
   MECH = 46 # Race
   MURLOC = 11 # Race
-  TOKEN = 185
+  TOKEN = 260
 
-  DRUID = 69 # Class
-  HUNTER = 40 # Class
-  MAGE = 36 # Class
-  PALADIN = 37 # Class
-  PRIEST = 35 # Class
-  ROGUE = 36 # Class
-  SHAMAN = 39 # Class
-  WARLOCK = 38 # Class
-  WARRIOR = 37 # Class
-  NEUTRAL = 348 # 'Classless'
+  DRUID = 75 # Class
+  HUNTER = 42 # Class
+  MAGE = 38 # Class
+  PALADIN = 39 # Class
+  PRIEST = 37 # Class
+  ROGUE = 38 # Class
+  SHAMAN = 41  # Class
+  WARLOCK = 41 # Class
+  WARRIOR = 39 # Class
+  NEUTRAL = 431 # 'Classless'
 
-  LEGENDARY = 70 # Rarity
+  LEGENDARY = 85 # Rarity
   EPIC = 68 # Rarity
-  RARE = 126 # Rarity
-  COMMON = 277 # Rarity
+  RARE = 137 # Rarity
+  COMMON = 297 # Rarity
   FREE = 66 # Rarity
 
   BASIC = 153 # Set
@@ -57,14 +57,14 @@ describe 'Controller: MainCtrl', ->
   NAXX = 85 # Set
   GVG = 143 # Set
 
-  MINION = 444 # Type
-  WEAPON = 33 # Type
-  ABILITY = 243 # Type
+  MINION = 509 # Type
+  WEAPON = 36 # Type
+  ABILITY = 281 # Type
 
-  BEAST = 50 # Race
-  DEMON = 19 # Race
-  DRAGON = 12 # Race
-  MECH = 54 # Race
+  BEAST = 55 # Race
+  DEMON = 21 # Race
+  DRAGON = 28 # Race
+  MECH = 61 # Race
   MURLOC = 13 # Race
   PIRATE = 8 # Race
   TOTEM = 7 # Race
@@ -214,7 +214,7 @@ describe 'Controller: MainCtrl', ->
     search 'totems', TOTEM
 
   it 'search should work for some common queries', ->
-    search 'legendary mech', 8
+    search 'legendary mech', 15
     search '2 mana mage spell', 4
     search '2/3 gvg minion with freeze', 1
     search '6/2 charge', 1

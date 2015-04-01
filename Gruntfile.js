@@ -294,12 +294,15 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/images'
         }]
       },
-      test: {
+      new: {
+        options: {
+          optimizationLevel: 7
+        },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images/test',
+          cwd: '<%= yeoman.app %>/raw-images',
           src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: '<%= yeoman.dist %>/images'
+          dest: '<%= yeoman.dist %>/optimized-images'
         }]
       }
     },
