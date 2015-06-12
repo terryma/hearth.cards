@@ -102,7 +102,7 @@ angular.module('hearthCardsApp')
       # Set filters
       else if /^token[s]?$/i.test token
         filters.token.push 'Token'
-      else if /^draftable[s]?$|^collectable[s]?$/i.test token
+      else if /^draftable[s]?$|^collectable[s]?$|^collectible[s]?$/i.test token
         filters.token.push 'Draftable'
       else if /^basic$/i.test token
         filters.set.push 'Basic'
