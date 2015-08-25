@@ -20,12 +20,15 @@ _ = require('underscore')
 # done "race"
 # "summons"
 
+SET = 103 # Grand Tournament
+LAST_PAGE = 3
+
 scrapeListing = (page, stop, callback, cards = {}) ->
   if page == stop
     callback(cards)
     return
 
-  request 'http://www.hearthpwn.com/cards?display=1&filter-set=102&filter-unreleased=1&page=' + page, (error, response, html) ->
+  request "http://www.hearthpwn.com/cards?display=1&filter-set=#{SET}&filter-unreleased=1&page=" + page, (error, response, html) ->
     if !error
       $ = cheerio.load(html)
       $('#cards tbody tr').filter ->
@@ -47,6 +50,7 @@ scrapeListing = (page, stop, callback, cards = {}) ->
         card.attack = attack if attack
         card.health = health if health
         cards[id] = card
+        # console.log card
         return
     scrapeListing page + 1, stop, callback, cards
     return
@@ -57,7 +61,7 @@ scrapeVisual = (page, stop, callback, cards = {}) ->
     callback(cards)
     return
 
-  request 'http://www.hearthpwn.com/cards?display=2&filter-set=102&filter-unreleased=1&page=' + page, (error, response, html) ->
+  request "http://www.hearthpwn.com/cards?display=2&filter-set=#{SET}&filter-unreleased=1&page=" + page, (error, response, html) ->
     if !error
       $ = cheerio.load(html)
       $('#cards tbody tr').filter ->
@@ -117,12 +121,9 @@ scrapeVisual = (page, stop, callback, cards = {}) ->
     return
   return
 
-
-scrapeListing 1, 4, (cards) ->
-  scrapeVisual(1, 4, (cards) ->
+scrapeListing 1, LAST_PAGE, (cards) ->
+  scrapeVisual(1, LAST_PAGE, (cards) ->
     # console.log _.values(cards).length
     cards = _.sortBy(_.values(cards), (card) -> card.id)
     fs.writeFile('cards.json', JSON.stringify(cards, null, 4))
   , cards)
-# scrapeVisual 1, 2, (cards) -> fs.writeFile('cards.json', JSON.stringify(cards, null, 4))
-# console.log cards

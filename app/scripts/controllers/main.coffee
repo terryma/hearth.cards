@@ -118,6 +118,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'Curse of Naxxramas'
       else if /^brm$|^blackrock$/i.test token
         filters.set.push 'Blackrock Mountain'
+      else if /^tgt$/i.test token
+        filters.set.push 'The Grand Tournament'
 
       # Special cases
       else if /^secrets$/i.test token
