@@ -87,7 +87,7 @@ body {
     background-color:#FAF0E6
   }
 
-  button {
+  button.search-btn {
     border: 0;
     background: none;
     /** belows styles are working good */
@@ -102,6 +102,12 @@ body {
     border-radius: 3px;
     color: #838383;
     z-index: 3;
+  }
+
+  button.help-btn {
+    background: none;
+    left: -35px;
+    color: #333333;
   }
 }
 
