@@ -120,6 +120,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'Blackrock Mountain'
       else if /^tgt$/i.test token
         filters.set.push 'The Grand Tournament'
+      else if /^loe$/i.test token
+        filters.set.push 'League of Explorers'
 
       # Special cases
       else if /^secrets$/i.test token

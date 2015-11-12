@@ -10,8 +10,8 @@ describe 'Controller: MainCtrl', ->
   MainCtrl = {}
   scope = {}
   # Some constants
-  TOTAL = 974
-  DRAFTABLE = 698
+  TOTAL = 1140
+  DRAFTABLE = 743
   PER_CLASS = 34 # Cards per class
   NEUTRAL = 229 # 'Classless' cards
   LEGENDARY = 62 # Rarity
@@ -33,23 +33,23 @@ describe 'Controller: MainCtrl', ->
   DRAGON = 9 # Race
   MECH = 46 # Race
   MURLOC = 11 # Race
-  TOKEN = 276
+  TOKEN = 397
 
-  DRUID = 88 # Class
-  HUNTER = 52 # Class
-  MAGE = 47 # Class
-  PALADIN = 48 # Class
-  PRIEST = 46 # Class
-  ROGUE = 50 # Class
-  SHAMAN = 54  # Class
-  WARLOCK = 50 # Class
-  WARRIOR = 48 # Class
-  NEUTRAL = 486 # 'Classless'
+  DRUID = 93 # Class
+  HUNTER = 57 # Class
+  MAGE = 51 # Class
+  PALADIN = 51 # Class
+  PRIEST = 49 # Class
+  ROGUE = 53 # Class
+  SHAMAN = 57  # Class
+  WARLOCK = 54 # Class
+  WARRIOR = 52 # Class
+  NEUTRAL = 618 # 'Classless'
 
-  LEGENDARY = 105 # Rarity
-  EPIC = 95 # Rarity
-  RARE = 173 # Rarity
-  COMMON = 350 # Rarity
+  LEGENDARY = 110 # Rarity
+  EPIC = 97 # Rarity
+  RARE = 186 # Rarity
+  COMMON = 380 # Rarity
   FREE = 66 # Rarity
 
   BASIC = 153 # Set
@@ -57,15 +57,15 @@ describe 'Controller: MainCtrl', ->
   NAXX = 85 # Set
   GVG = 143 # Set
 
-  MINION = 619 # Type
-  WEAPON = 41 # Type
-  ABILITY = 314 # Type
+  MINION = 718 # Type
+  WEAPON = 44 # Type
+  ABILITY = 378 # Type
 
-  BEAST = 66 # Race
+  BEAST = 76 # Race
   DEMON = 27 # Race
   DRAGON = 31 # Race
-  MECH = 62 # Race
-  MURLOC = 14 # Race
+  MECH = 65 # Race
+  MURLOC = 18 # Race
   PIRATE = 10 # Race
   TOTEM = 8 # Race
 

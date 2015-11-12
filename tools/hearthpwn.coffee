@@ -20,8 +20,13 @@ _ = require('underscore')
 # done "race"
 # "summons"
 
-SET = 103 # Grand Tournament
-LAST_PAGE = 3
+# How to update for new expansion:
+# 1. Run coffee hearthpwn.coffee to fetch all card data and images
+# 2. Run imagemin * . to minimize all images
+# 3. Copy the output of cards.json to app/scripts/app.coffee
+# 4. Copy minized images to app/images/
+SET = 104 # League of Explorer
+LAST_PAGE = 4
 
 scrapeListing = (page, stop, callback, cards = {}) ->
   if page == stop
