@@ -1,8 +1,5 @@
 'use strict'
 
-angular.element(document).ready ->
-  $('input[autofocus]:visible:first').focus()
-
 angular.module('hearthCardsApp')
   .controller 'MainCtrl', ($scope, $filter, $location, cards) ->
 
@@ -13,7 +10,7 @@ angular.module('hearthCardsApp')
     $scope.query = if $location.path()? then $location.path()[1..]
 
     # All the cards in the game. This is defined as a constant instead of loaded from a json file async to reduce
-    # CloudFront/S3 roundtrips, as well as to take advantage of build time minification
+    # CloudFlare/S3 roundtrips, as well as to take advantage of build time minification
     $scope.allCards = cards
 
     # Map all cards to be indexed by their id
@@ -28,6 +25,15 @@ angular.module('hearthCardsApp')
       # (map[summoner] ||= []).push card for summoner in card.summons if card.summons?
       # map
     # , {}
+
+    # Register the focus event and popovers after the view is fully loaded into
+    # the DOM
+    $scope.$on '$includeContentLoaded', (event) ->
+      $('input[autofocus]:visible:first').focus()
+      $('[data-toggle="popover"]').popover(
+        html: true
+        content: $('#help-popover-content').html()
+      )
 
     # All the searchable cards. This is the starting point of our filtering. Sort all of them by mana cost initially
     $scope.searchable = _.sortBy (card for card in cards when card.type not in ["Hero Power", "Hero"]), (card) -> parseInt(card.mana)

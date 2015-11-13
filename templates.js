@@ -22,12 +22,28 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "      ng-model-options=\"{debounce:200}\" type=\"search\" class=\"search-query\n" +
     "      form-control\" placeholder=\"try 'legendary mech', '2 mana mage spell', or '2/3 gvg minion with freeze'\" autofocus>\n" +
     "      <span class=\"input-group-btn\">\n" +
-    "        <button class=\"btn\" type=\"button\">\n" +
+    "        <button class=\"btn search-btn\" type=\"button\">\n" +
     "          <span class=\"glyphicon glyphicon-search\"></span>\n" +
     "        </button>\n" +
     "      </span>\n" +
+    "      <span class=\"input-group-btn\">\n" +
+    "        <a tabindex=\"0\" class=\"btn help-btn\" role=\"button\" data-toggle=\"popover\"\n" +
+    "        title=\"Try these searches\" data-container=\"body\" data-trigger=\"click\">\n" +
+    "          <span class=\"glyphicon glyphicon-question-sign\"></span>\n" +
+    "        </a>\n" +
+    "      </span>\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "</div>\n" +
+    "\n" +
+    "<div id=\"help-popover-content\" class=\"hidden\">\n" +
+    "  <ul>\n" +
+    "    <li><a href=\"#collectible murlocs\">collectible murlocs</li>\n" +
+    "    <li><a href=\"#collectible legendary mech\">collectible legendary mech</a></li>\n" +
+    "    <li><a href=\"#2 mana mage spell\">2 mana mage spell</a></li>\n" +
+    "    <li><a href=\"#2/3 gvg minion with freeze\">2/3 gvg minion with freeze</a></li>\n" +
+    "    <li><a href=\"#loe collectible spells\">loe collectible spells</a></li>\n" +
+    "  </ul>\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"row text-center\" ng-cloak>\n" +
