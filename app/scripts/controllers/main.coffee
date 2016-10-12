@@ -128,6 +128,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'The Grand Tournament'
       else if /^loe$/i.test token
         filters.set.push 'League of Explorers'
+      else if /^wog$/i.test token
+        filters.set.push 'Whispers of the Old Gods'
 
       # Special cases
       else if /^secrets$/i.test token

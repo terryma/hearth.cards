@@ -25,15 +25,17 @@ _ = require('underscore')
 # 2. Run imagemin * . to minimize all images
 # 3. Copy the output of cards.json to app/scripts/app.coffee
 # 4. Copy minized images to app/images/
-SET = 104 # League of Explorer
-LAST_PAGE = 4
+SET = 105 # League of Explorer
+LAST_PAGE = 3
 
 scrapeListing = (page, stop, callback, cards = {}) ->
   if page == stop
     callback(cards)
     return
 
-  request "http://www.hearthpwn.com/cards?display=1&filter-set=#{SET}&filter-unreleased=1&page=" + page, (error, response, html) ->
+  url = "http://www.hearthpwn.com/cards?display=1&filter-set=#{SET}&filter-unreleased=1&page=" + page
+  console.log "Fetching data from #{url}"
+  request url, (error, response, html) ->
     if !error
       $ = cheerio.load(html)
       $('#cards tbody tr').filter ->
@@ -66,7 +68,9 @@ scrapeVisual = (page, stop, callback, cards = {}) ->
     callback(cards)
     return
 
-  request "http://www.hearthpwn.com/cards?display=2&filter-set=#{SET}&filter-unreleased=1&page=" + page, (error, response, html) ->
+  url = "http://www.hearthpwn.com/cards?display=2&filter-set=#{SET}&filter-unreleased=1&page=" + page
+  console.log "Fetching image from #{url}"
+  request url, (error, response, html) ->
     if !error
       $ = cheerio.load(html)
       $('#cards tbody tr').filter ->
@@ -75,6 +79,9 @@ scrapeVisual = (page, stop, callback, cards = {}) ->
         id = current.find('a').attr('href').trim().replace(/^\/cards\//, '')
 
         image = $(this).find('td.visual-image-cell img').attr('src')
+        console.log "Downloading #{image}"
+        if not image
+          return
         request(image).pipe(fs.createWriteStream("images/#{id}.png"))
 
         # Card text
