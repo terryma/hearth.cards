@@ -2,7 +2,7 @@
   "name": "hearth-cards",
   "version": "1.0.0",
   "dependencies": {
-    "angular": "1.3.7",
+    "angular": "1.3.20",
     "json3": "^3.3.0",
     "es5-shim": "^4.0.0",
     "bootstrap-sass-official": "^3.2.0",
@@ -35,8 +35,5 @@
         "scss/font-awesome.scss"
       ]
     }
-  },
-  "resolutions": {
-    "angular": "1.3.15"
   }
 }
