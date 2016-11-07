@@ -1,0 +1,53 @@
+<!-- Included from ng-include. This creates a child scope --!>
+<div class="row" id="search">
+  <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1
+    col-sm-10 col-xs-offset-1 col-xs-10" >
+    <div id="custom-search-input" class="input-group input-group-lg">
+      <input ng-model="$parent.query" ng-change="search(query)"
+      ng-model-options="{debounce:200}" type="search" class="search-query
+      form-control" placeholder="try 'legendary mech', '2 mana mage spell', or '2/3 gvg minion with freeze'" autofocus>
+      <span class="input-group-btn">
+        <button class="btn search-btn" type="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </span>
+      <span class="input-group-btn">
+        <a tabindex="0" class="btn help-btn" role="button" data-toggle="popover"
+        title="Try these searches" data-container="body" data-trigger="click">
+          <span class="glyphicon glyphicon-question-sign"></span>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id="help-popover-content" class="hidden">
+  <ul>
+    <li><a href="#collectible murlocs">collectible murlocs</li>
+    <li><a href="#collectible legendary mech">collectible legendary mech</a></li>
+    <li><a href="#2 mana mage spell">2 mana mage spell</a></li>
+    <li><a href="#2/3 gvg minion with freeze">2/3 gvg minion with freeze</a></li>
+    <li><a href="#loe collectible spells">loe collectible spells</a></li>
+  </ul>
+</div>
+
+<div class="row text-center" ng-cloak>
+  <div class="col-lg-12">
+    <div ng-class="percentCircleCssClass()">
+      <span>{{filtered.length}}</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-switch="filtered.length" ng-cloak>
+  <div ng-switch-when="0" class="notfound text-center">
+    <h1>try another search</h1>
+    <img src="images/error-bg.png" class="img-responsive center-block">
+  </div>
+
+  <div ng-switch-when="1" class="row" id="cards">
+    <!-- <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6"> --><!-- <dl class="dl-horizontal"> --><!-- <dt>Class</dt> --><!-- <dd>{{card.class == nil ? "Neutral" : card.class}}</dd> --><!-- <dt>Mana</dt> --><!-- <dd>{{card.mana}}</dd> --><!-- <dt>Attack</dt> --><!-- <dd>{{card.attack}}</dd> --><!-- <dt>Health</dt> --><!-- <dd>{{card.health}}</dd> --><!-- <dt>Type</dt> --><!-- <dd>{{card.type}}</dd> --><!-- <dt>Race</dt> --><!-- <dd>{{card.race}}</dd> --><!-- <dt>Set</dt> --><!-- <dd>{{card.set}}</dd> --><!-- <dt>Rarity</dt> --><!-- <dd>{{card.rarity}}</dd> --><!-- <dt>Text</dt> --><!-- <dd>{{card.text}}</dd> --><!-- </dl> --><!-- </div> --> <card card="filtered[0]" ng-click="show(filtered[0])"></card> <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-if="relatedCards.length > 0"> <img ng-src="images/arrow-blue.png" class="img-responsive center-block"> </div> <div ng-if="relatedCards.length > 0"> <card card="related" ng-click="show(related)" ng-repeat="related in relatedCards track by related.id"></card> </div>  <div ng-switch-default class="row" id="cards" infinite-scroll="load()" infinite-scroll-distance="2"> <card card="card" ng-click="show(card)" ng-repeat="card in shown track by card.id"></card> </div>
