@@ -1,5 +1,5 @@
 # HearthCards [![Build Status](https://travis-ci.org/terryma/hearth.cards.svg)](https://travis-ci.org/terryma/hearth.cards)
-This is the codebase for [http://hearth.cards](http://hearth.cards), a tool for [HearthStone](http://us.battle.net/hearthstone/en/) players to browse and filter all the cards in the game.
+This is the codebase for [http://terry.ma/hearth.cards/](http://terry.ma/hearth.cards/), a tool for [HearthStone](http://us.battle.net/hearthstone/en/) players to browse and filter all the cards in the game.
 
 # Development
 * Run ```grunt serve``` to run the local server for testing.
