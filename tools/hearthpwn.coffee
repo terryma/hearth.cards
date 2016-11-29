@@ -25,8 +25,8 @@ _ = require('underscore')
 # 2. Run imagemin * . to minimize all images
 # 3. Copy the output of cards.json to app/scripts/app.coffee
 # 4. Copy minized images to app/images/
-SET = 106 # League of Explorer
-LAST_PAGE = 4
+SET = 107 # League of Explorer
+LAST_PAGE = 7
 
 scrapeListing = (page, stop, callback, cards = {}) ->
   if page == stop

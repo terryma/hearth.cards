@@ -132,6 +132,8 @@ angular.module('hearthCardsApp')
         filters.set.push 'Whispers of the Old Gods'
       else if /^kara$/i.test token
         filters.set.push 'One Night in Karazhan'
+      else if /^msg$/i.test token
+        filters.set.push 'Mean Streets of Gadgetzan'
 
       # Special cases
       else if /^secrets$/i.test token
