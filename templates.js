@@ -28,7 +28,7 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "      </span>\n" +
     "      <span class=\"input-group-btn\">\n" +
     "        <a tabindex=\"0\" class=\"btn help-btn\" role=\"button\" data-toggle=\"popover\"\n" +
-    "        title=\"Try these searches\" data-container=\"body\" data-trigger=\"click\">\n" +
+    "        title=\"Help\" data-container=\"body\" data-trigger=\"click\">\n" +
     "          <span class=\"glyphicon glyphicon-question-sign\"></span>\n" +
     "        </a>\n" +
     "      </span>\n" +
@@ -37,6 +37,8 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "</div>\n" +
     "\n" +
     "<div id=\"help-popover-content\" class=\"hidden\">\n" +
+    "  <div>\n" +
+    "  <h4>Examples:</h4>\n" +
     "  <ul>\n" +
     "    <li><a href=\"#collectible murlocs\">collectible murlocs</li>\n" +
     "    <li><a href=\"#collectible legendary mech\">collectible legendary mech</a></li>\n" +
@@ -44,6 +46,80 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "    <li><a href=\"#2/3 gvg minion with freeze\">2/3 gvg minion with freeze</a></li>\n" +
     "    <li><a href=\"#loe collectible spells\">loe collectible spells</a></li>\n" +
     "  </ul>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Filter by class:</h4>\n" +
+    "  <a href=\"#druid\">druid</a>\n" +
+    "  <a href=\"#hunter\">hunter</a>\n" +
+    "  <a href=\"#mage\">mage</a>\n" +
+    "  <a href=\"#paladin\">paladin</a>\n" +
+    "  <a href=\"#priest\">priest</a>\n" +
+    "  <a href=\"#rogue\">rogue</a>\n" +
+    "  <a href=\"#shaman\">shaman</a>\n" +
+    "  <a href=\"#warlock\">warlock</a>\n" +
+    "  <a href=\"#warrior\">warrior</a>\n" +
+    "  <a href=\"#neutral\">neutral</a>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Show only collectible cards:</h4>\n" +
+    "  <a href=\"#collectible\">collectible</a>/<a href=\"#collectable\">collectable</a>/<a href=\"#draftable\">draftable</a>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Filter by type:</h4>\n" +
+    "  <a href=\"#minion\">minion</a>\n" +
+    "  <a href=\"#weapon\">weapon</a>\n" +
+    "  <a href=\"#spell\">spell</a>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Filter by mana/attack/health:</h4>\n" +
+    "  <a href=\"#1 mana\">1 mana</a>\n" +
+    "  <a href=\"#2 attack\">2 attack</a>\n" +
+    "  <a href=\"#3 health\">3 health</a>\n" +
+    "  <a href=\"#7/7 minion\">7/7 minion</a>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Filter by rarity:</h4>\n" +
+    "  <a href=\"#legendary\">legendary</a>\n" +
+    "  <a href=\"#epic\">epic</a>\n" +
+    "  <a href=\"#rare\">rare</a>\n" +
+    "  <a href=\"#common\">common</a>\n" +
+    "  <a href=\"#free\">free</a>\n" +
+    "  </div>\n" +
+    "\n" +
+    "  <div>\n" +
+    "  <h4>Filter by race:</h4>\n" +
+    "  <a href=\"#beast\">beast</a>\n" +
+    "  <a href=\"#demon\">demon</a>\n" +
+    "  <a href=\"#dragon\">dragon</a>\n" +
+    "  <a href=\"#mech\">mech</a>\n" +
+    "  <a href=\"#murloc\">murloc</a>\n" +
+    "  <a href=\"#pirate\">pirate</a>\n" +
+    "  <a href=\"#totem\">totem</a>\n" +
+    "  </div>\n" +
+    "  \n" +
+    "  <div>\n" +
+    "  <h4>Filter by set:</h4>\n" +
+    "  <ul>\n" +
+    "  <li><a href=\"#basic\">basic</a></li>\n" +
+    "  <li><a href=\"#classic\">classic</a></li>\n" +
+    "  <li><a href=\"#reward\">reward</a></li>\n" +
+    "  <li><a href=\"#promo\">promo</a></li>\n" +
+    "  <li><a href=\"#gvg\">gvg (Goblin vs. Gnomes)</a></li>\n" +
+    "  <li><a href=\"#naxx\">naxx (Curse of Naxxramas)</a></li>\n" +
+    "  <li><a href=\"#brm\">brm (Blackrock Mountain)</a></li>\n" +
+    "  <li><a href=\"#tgt\">tgt (The Grand Tournament)</a></li>\n" +
+    "  <li><a href=\"#loe\">loe (League of Explorers)</a></li>\n" +
+    "  <li><a href=\"#wog\">wog (Whisper of the Old Gods)</a></li>\n" +
+    "  <li><a href=\"#kara\">kara (One Night in Karazhan)</a></li>\n" +
+    "  <li><a href=\"#msg\">msg (Mean Streets of Gadgetzan)</a></li>\n" +
+    "  </ul>\n" +
+    "  </div>\n" +
+    "  \n" +
     "</div>\n" +
     "\n" +
     "<div class=\"row text-center\" ng-cloak>\n" +

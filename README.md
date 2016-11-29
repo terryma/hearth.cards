@@ -8,6 +8,8 @@ This is the codebase for [http://terry.ma/hearth.cards/](http://terry.ma/hearth.
 * Run ```grunt build``` to build the project. This creates ```/dist``` which contains the deployable site.
 * Run ```grunt release``` to run unit test, build, and deploy the project to S3.
 
+* Project is now hosted by Github pages. To release run ```git subtree push --prefix dist origin gh-pages``` after build.
+
 # TODO
 ## Features/Bugs
 * Add tooltip next to search bar to contain example search queries
