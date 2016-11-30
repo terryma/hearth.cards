@@ -6,7 +6,8 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "  <div class=\"card center-block\">\n" +
     "    <img ng-src=\"images/{{card.img}}\" class=\"img-responsive center-block card-img\">\n" +
     "    <img ng-src=\"images/token.png\" ng-if=\"card.isToken\" ng-show=\"loaded\" class=\"token img-responsive\">\n" +
-    "    <img ng-src=\"images/{{card.class == nil ? 'neutral' : card.class.toLowerCase()}}.png\" ng-show=\"loaded\" ng-if=\"!card.isToken\" class=\"token img-responsive\">\n" +
+    "    <img ng-src=\"images/{{card.class == nil ? 'neutral' : card.class.toLowerCase()}}.png\" ng-show=\"loaded\"\n" +
+    "    ng-if=\"!card.isToken && (card.class == nil || card.class.indexOf(' ') === -1)\" class=\"token img-responsive\">\n" +
     "  </div>\n" +
     "</div>\n"
   );
