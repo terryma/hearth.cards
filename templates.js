@@ -20,7 +20,7 @@ angular.module('hearthCardsApp').run(['$templateCache', function($templateCache)
     "    <div id=\"custom-search-input\" class=\"input-group input-group-lg\">\n" +
     "      <input ng-model=\"$parent.query\" ng-change=\"search(query)\"\n" +
     "      ng-model-options=\"{debounce:200}\" type=\"search\" class=\"search-query\n" +
-    "      form-control\" placeholder=\"try 'legendary mech', '2 mana mage spell', or '2/3 gvg minion with freeze'\" autofocus>\n" +
+    "      form-control\" placeholder=\"Try 'legendary mech', '2 mana mage spell', or '2/3 gvg minion with freeze'. Click on ? for more help\" autofocus>\n" +
     "      <span class=\"input-group-btn\">\n" +
     "        <button class=\"btn search-btn\" type=\"button\">\n" +
     "          <span class=\"glyphicon glyphicon-search\"></span>\n" +
